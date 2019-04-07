@@ -6,23 +6,13 @@ public class EnvironmentObject : MonoBehaviour
 {
     public string nameToDisplay;
 
-    
-    #region settings
-
     [Header("Settings")]
     [Range(1, 5)]
-    public float TranslationSpeed = 1;
-
-    #endregion
+    public float TranslationSpeed = 5;
 
     private void Start()
     {
         nameToDisplay = gameObject.name;
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void Translate(Vector3 direction)

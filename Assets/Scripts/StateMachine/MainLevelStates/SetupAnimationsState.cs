@@ -17,6 +17,11 @@ public class SetupAnimationsState : MonoBehaviour, IState
 
     public void MouseInputAction()
     {
-        Debug.Log("animations state");
+        
+    }
+
+    public void KeysInputAction()
+    {
+        throw new System.NotImplementedException();
     }
 }

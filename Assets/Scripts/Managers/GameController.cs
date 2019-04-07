@@ -26,13 +26,16 @@ public class GameController : MonoBehaviour
         var buildingState = gameObject.AddComponent<BuildingEnvironmatentState>();
         var animationsState = gameObject.AddComponent<SetupAnimationsState>();
         var editEnvState = gameObject.AddComponent<EditEnvironmentState>();
+        var viewModeState = gameObject.AddComponent<ViewModeState>();
         
         StateMachine.States.Add(buildingState);
         StateMachine.States.Add(animationsState);
         StateMachine.States.Add(editEnvState);
+        StateMachine.States.Add(viewModeState);
 
 //        StateMachine.CurrentState = buildingState;
         StateMachine.CurrentState = editEnvState;
+//        StateMachine.CurrentState = viewModeState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
         

@@ -28,4 +28,9 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
             go.AddComponent<EnvironmentObject>();
         }
     }
+
+    public void KeysInputAction()
+    {
+        
+    }
 }

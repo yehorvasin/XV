@@ -27,4 +27,24 @@ public class EditEnvironmentState : MonoBehaviour, IState
             CurrentObjectToEdit = obj;
         }
     }
+
+    public void KeysInputAction()
+    {
+        if (Input.GetKey(KeyCode.W))
+            CurrentObjectToEdit.Translate(Vector3.forward);
+        else if (Input.GetKey(KeyCode.A))
+            CurrentObjectToEdit.Translate(Vector3.left);
+        else if (Input.GetKey(KeyCode.S))
+            CurrentObjectToEdit.Translate(Vector3.back);
+        else if (Input.GetKey(KeyCode.D))
+            CurrentObjectToEdit.Translate(Vector3.right);
+        else if (Input.GetKey(KeyCode.LeftArrow))
+            CurrentObjectToEdit.Rotate(5);
+        else if (Input.GetKey(KeyCode.RightArrow))
+            CurrentObjectToEdit.Rotate(-5);
+        else if (Input.GetKey(KeyCode.Backspace))
+        {
+            Destroy(CurrentObjectToEdit.gameObject);
+        }
+    }
 }

@@ -26,6 +26,7 @@
               <e p="BuildingEnvironmatentState.cs" t="Include" />
               <e p="EditEnvironmentState.cs" t="Include" />
               <e p="SetupAnimationsState.cs" t="Include" />
+              <e p="ViewModeState.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
           </e>

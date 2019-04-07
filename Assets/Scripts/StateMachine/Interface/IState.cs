@@ -8,4 +8,5 @@ public interface IState
     void DeactivateState();
 
     void MouseInputAction();
+    void KeysInputAction();
 }
