@@ -29,16 +29,16 @@ public class InputHandler : MonoBehaviour
         if (currObject == null) return;
         
         if (Input.GetKey(KeyCode.W))
-            currObject.Translate();
+            currObject.Translate(Vector3.forward);
         else if (Input.GetKey(KeyCode.A))
-            currObject.Translate();
+            currObject.Translate(Vector3.left);
         else if (Input.GetKey(KeyCode.S))
-            currObject.Translate();
+            currObject.Translate(Vector3.back);
         else if (Input.GetKey(KeyCode.D))
-            currObject.Translate();
+            currObject.Translate(Vector3.right);
         else if (Input.GetKey(KeyCode.LeftArrow))
-            currObject.Rotate();
+            currObject.Rotate(5);
         else if (Input.GetKey(KeyCode.RightArrow))
-            currObject.Rotate();
+            currObject.Rotate(-5);
     }
 }

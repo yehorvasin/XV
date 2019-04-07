@@ -32,6 +32,8 @@ public class Saver : MonoBehaviour
         var json = JsonUtility.ToJson(saveList);
         
         PlayerPrefs.SetString(GameController.Instance.DontDestroy.SceneId, json);
+        
+        Debug.Log("CONTENT SAVED!!!");
         return json;
     }
 

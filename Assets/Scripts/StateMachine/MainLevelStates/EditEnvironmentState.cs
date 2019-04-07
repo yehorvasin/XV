@@ -24,11 +24,7 @@ public class EditEnvironmentState : MonoBehaviour, IState
         if (Physics.Raycast(ray, out hit, 1000))
         {
             var obj = hit.collider.GetComponent<EnvironmentObject>();
-            if (obj != null)
-            {
-                CurrentObjectToEdit = obj;
-                Debug.Log(obj.nameToDisplay);
-            }
+            CurrentObjectToEdit = obj;
         }
     }
 }
