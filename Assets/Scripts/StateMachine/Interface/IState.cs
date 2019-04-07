@@ -7,5 +7,5 @@ public interface IState
     void ActivateState();
     void DeactivateState();
 
-    void InputAction();
+    void MouseInputAction();
 }

@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class Saver : MonoBehaviour
 {
-    public static Saver Instance;
-
-    private void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
-    }
+//    public static Saver Instance;
+//
+//    private void Awake()
+//    {
+//        if (Instance == null)
+//            Instance = this;
+//    }
 
     public string CreateAndSaveNewScene(int id)
     {
@@ -25,10 +25,9 @@ public class Saver : MonoBehaviour
         return json;
     }
 
-    [ContextMenu("SaveContent")]
     public string SaveSceneData()
     {
-        var all = GameObject.FindGameObjectsWithTag("spawned").ToList();
+        var all = FindObjectsOfType<EnvironmentObject>();
         var saveList = new XVObjectDataList();
         
         foreach (var obj in all)

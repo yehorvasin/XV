@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_XVgit.-887019826.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Environment" t="Include">
+            <e p="EnvironmentObject.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="EnvironmentResourcesManager.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="InputHandler.cs" t="Include" />
+          </e>
+          <e p="Saver" t="Include">
+            <e p="Saver.cs" t="Include" />
+          </e>
+          <e p="StateMachine" t="Include">
+            <e p="Interface" t="Include">
+              <e p="IState.cs" t="Include" />
+            </e>
+            <e p="MainLevelStates" t="Include">
+              <e p="BuildingEnvironmatentState.cs" t="Include" />
+              <e p="EditEnvironmentState.cs" t="Include" />
+              <e p="SetupAnimationsState.cs" t="Include" />
+            </e>
+            <e p="StateMachine.cs" t="Include" />
+          </e>
+          <e p="Temp" t="Include">
+            <e p="DontDestroy.cs" t="Include" />
+            <e p="ScenesButton.cs" t="Include" />
+          </e>
+          <e p="XVSavingData" t="Include">
+            <e p="XVObjectData.cs" t="Include" />
+            <e p="XVObjectDataList.cs" t="Include" />
+            <e p="XVScenesDataList.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="XVgit.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

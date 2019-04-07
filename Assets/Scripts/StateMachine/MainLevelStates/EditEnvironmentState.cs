@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SetupAnimationsState : MonoBehaviour, IState
+public class EditEnvironmentState : MonoBehaviour, IState
 {
-
     public void ActivateState()
     {
         
@@ -15,8 +14,8 @@ public class SetupAnimationsState : MonoBehaviour, IState
         
     }
 
-    public void InputAction()
+    public void MouseInputAction()
     {
-        Debug.Log("animations state");
+        
     }
 }

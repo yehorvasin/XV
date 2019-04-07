@@ -14,7 +14,7 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
         
     }
 
-    public void InputAction()
+    public void MouseInputAction()
     {
         var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
 
@@ -25,7 +25,7 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
         {
             var go = Instantiate(prefab, hit.point, Quaternion.identity);
             go.name = go.name.Replace("(Clone)", "");
-            go.tag = "spawned";
+            go.AddComponent<EnvironmentObject>();
         }
     }
 }

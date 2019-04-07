@@ -8,7 +8,7 @@ public class EnvironmentResourcesManager : MonoBehaviour
     public static EnvironmentResourcesManager Instance;
     
     [SerializeField]
-    private List<GameObject> _resourcesObjects;
+    private List<GameObject> _resourcesObjects = new List<GameObject>();
     public List<GameObject> ResourcesObjects => _resourcesObjects;
 
     private void Awake()

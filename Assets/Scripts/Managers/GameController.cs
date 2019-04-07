@@ -7,13 +7,12 @@ public class GameController : MonoBehaviour
 {
     public static GameController Instance;
 
-    private StateMachine _stateMachine;
-    private InputHandler _inputHandler;
-    private EnvironmentResourcesManager _environmentResourcesManager;
-    private Saver _saver;
+    public StateMachine StateMachine;
+    public InputHandler InputHandler;
+    public EnvironmentResourcesManager EnvironmentResourcesManager;
+    public Saver Saver;
 
-    private DontDestroy _dontDestroy;
-    public DontDestroy DontDestroy => _dontDestroy;
+    public DontDestroy DontDestroy;
     
     private void Awake()
     {
@@ -23,34 +22,32 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        _stateMachine = GetComponent<StateMachine>();
+        StateMachine = GetComponent<StateMachine>();
         var buildingState = gameObject.AddComponent<BuildingEnvironmatentState>();
         var animationsState = gameObject.AddComponent<SetupAnimationsState>();
+        var editEnvState = gameObject.AddComponent<EditEnvironmentState>();
         
-        _stateMachine.States.Add(buildingState);
-        _stateMachine.States.Add(animationsState);
+        StateMachine.States.Add(buildingState);
+        StateMachine.States.Add(animationsState);
+        StateMachine.States.Add(editEnvState);
         
-        _stateMachine.CurrentState = buildingState;
+        StateMachine.CurrentState = buildingState;
 
-        _inputHandler = GetComponent<InputHandler>();
-        _environmentResourcesManager = GetComponent<EnvironmentResourcesManager>();
-        _saver = GetComponent<Saver>();
-
-        _dontDestroy = FindObjectOfType<DontDestroy>();
+        DontDestroy = FindObjectOfType<DontDestroy>();
         
         DeserializeSceneContent();
     }
 
     public IState GetCurrentState()
     {
-        return _stateMachine.CurrentState;
+        return StateMachine.CurrentState;
     }
 
     private void DeserializeSceneContent()
     {
-        if (PlayerPrefs.HasKey(_dontDestroy.SceneId))
+        if (PlayerPrefs.HasKey(DontDestroy.SceneId))
         {
-            var json = PlayerPrefs.GetString(_dontDestroy.SceneId);
+            var json = PlayerPrefs.GetString(DontDestroy.SceneId);
             var list = JsonUtility.FromJson<XVObjectDataList>(json);
 
             var objects = list.list;
@@ -62,7 +59,7 @@ public class GameController : MonoBehaviour
                     new Quaternion(element.X_Rotation, element.Y_Rotation, element.Z_Rotation, element.W_Rotation));
                 
                 go.name = go.name.Replace("(Clone)", "");
-                go.tag = "spawned";
+                go.AddComponent<EnvironmentObject>();
             }
         }
     }
