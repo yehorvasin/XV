@@ -30,8 +30,9 @@ public class GameController : MonoBehaviour
         StateMachine.States.Add(buildingState);
         StateMachine.States.Add(animationsState);
         StateMachine.States.Add(editEnvState);
-        
-        StateMachine.CurrentState = buildingState;
+
+//        StateMachine.CurrentState = buildingState;
+        StateMachine.CurrentState = editEnvState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
         

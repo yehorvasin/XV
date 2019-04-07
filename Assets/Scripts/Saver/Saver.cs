@@ -6,14 +6,6 @@ using UnityEngine;
 
 public class Saver : MonoBehaviour
 {
-//    public static Saver Instance;
-//
-//    private void Awake()
-//    {
-//        if (Instance == null)
-//            Instance = this;
-//    }
-
     public string CreateAndSaveNewScene(int id)
     {
         //TODO: Get old list and add to new
