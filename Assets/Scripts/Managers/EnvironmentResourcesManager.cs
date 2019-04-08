@@ -38,7 +38,7 @@ public class EnvironmentResourcesManager : MonoBehaviour
 
     private void LoadObjectsFromBundle(string bundlePath)
     {
-        
+        return;
     }
 
     public GameObject GetObjectByName(string name)
