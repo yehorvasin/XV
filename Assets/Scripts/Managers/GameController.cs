@@ -12,6 +12,10 @@ public class GameController : MonoBehaviour
     public EnvironmentResourcesManager EnvironmentResourcesManager;
     public Saver Saver;
 
+    private XVAnimationController _animationController;
+
+    public XVAnimationController AnimController {get; set;}
+
     public DontDestroy DontDestroy;
     
     private void Awake()
@@ -34,8 +38,9 @@ public class GameController : MonoBehaviour
         StateMachine.States.Add(viewModeState);
 
 //        StateMachine.CurrentState = buildingState;
-        StateMachine.CurrentState = editEnvState;
+//        StateMachine.CurrentState = editEnvState;
 //        StateMachine.CurrentState = viewModeState;
+        StateMachine.CurrentState = animationsState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
         

@@ -6,16 +6,16 @@ using UnityEngine;
 public class AnimHandler : MonoBehaviour
 {
     public XVAnimationController controller;
-    public GameObject animHolder;
+//    public GameObject animHolder;
 
     public XVAnimation anim;
-    public AnimCallBack callBack;
-    private XVAnimation a;
+//    public AnimCallBack callBack;
+//    private XVAnimation a;
 
-    // private void Start()
-    // {
-    //     callBack += AddToSTack;
-    // }
+    private void Start()
+    {
+        controller = GameController.Instance.AnimController;
+    }
 
     public void StartSetupAnim()
     {
