@@ -33,8 +33,8 @@ public class GameController : MonoBehaviour
         StateMachine.States.Add(editEnvState);
         StateMachine.States.Add(viewModeState);
 
-//        StateMachine.CurrentState = buildingState;
-        StateMachine.CurrentState = editEnvState;
+       StateMachine.CurrentState = buildingState;
+   //     StateMachine.CurrentState = editEnvState;
 //        StateMachine.CurrentState = viewModeState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();

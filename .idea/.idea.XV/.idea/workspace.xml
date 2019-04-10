@@ -1,9 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5c7ccfb-3210-447e-be97-5cd9e3e449e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Temp.meta" beforeDir="false" />
+    <list default="true" id="f4d4056a-43f1-4df7-886a-a0e97bcae879" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/BuilderUIController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/Messenger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/Messenger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine/cm_logo_lg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine/cm_logo_lg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_2.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_2.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set/Wood_Floor_Light.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set/Wood_Floor_Light.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document/_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document/_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift/_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift/_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/Pallet01.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/Pallet01.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Beige_2.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Beige_2.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Metal_Steel_Textured_White_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Metal_Steel_Textured_White_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre/_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre/_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift/_Metal_Aluminum_Anodized_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift/_Metal_Aluminum_Anodized_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_Carpet_LightGray_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_Carpet_LightGray_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_CorrogateShiny_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_CorrogateShiny_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table/Wood_Floor_Light.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table/Wood_Floor_Light.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/EPAL_Motiv_Richtlinie_1_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/EPAL_Motiv_Richtlinie_1_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/Wood_OSB.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/Wood_OSB.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/_Beige_3.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/_Beige_3.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/eur.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/eur.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/ippc.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/ippc.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_25.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_25.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_Beige_3.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_Beige_3.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/DVAS063W.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/DVAS063W.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/PRGPS50280.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/PRGPS50280.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/biz.bmp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/biz.bmp.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley/_OSB__chip_board__.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley/_OSB__chip_board__.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/Tile_Hexagon_White.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/Tile_Hexagon_White.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/_Metal_Corrogated_Shiny_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/_Metal_Corrogated_Shiny_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress/ScenesButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress/ScenesButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saver.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saver.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVScenesDataList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVScenesDataList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,146 +201,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1344833887">
+    <session id="-1134907596">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="13" />
+          <entry key="cs" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="13" />
+          <entry key="C#" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="4" />
+          <entry key="cs" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="4" />
+          <entry key="C#" value="102" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/UIController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="165">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <marker date="1554748779000" expanded="false" signature="6:113" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="158:2455" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="439:510" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="536:1368" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="1405:1459" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="1503:2327" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="1562:2321" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="1791:2311" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="2406:2453" ph="{...}" />
+                <marker date="1554927711000" expanded="false" signature="6:100" ph="..." />
+                <marker date="1554927711000" expanded="true" signature="143:381" ph="{...}" />
+                <marker date="1554927711000" expanded="true" signature="222:265" ph="{...}" />
+                <marker date="1554927711000" expanded="true" signature="320:379" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/EditorUIController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="105">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
-                <marker date="1554753261000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554753261000" expanded="true" signature="137:407" ph="{...}" />
-                <marker date="1554753261000" expanded="true" signature="172:193" ph="{...}" />
-                <marker date="1554753261000" expanded="true" signature="228:249" ph="{...}" />
-                <marker date="1554753261000" expanded="true" signature="285:306" ph="{...}" />
-                <marker date="1554753261000" expanded="true" signature="341:405" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="130:801" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="164:185" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="220:241" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="277:298" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="333:799" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="376:396" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="438:458" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="500:520" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="562:582" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="632:652" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="703:723" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="773:793" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-              <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="137:1390" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="226:247" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="282:303" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="339:635" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="500:629" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="670:1388" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="1309:1382" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-              <folding>
-                <marker date="1554748779000" expanded="true" signature="83:776" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="152:173" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="208:229" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="265:718" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="514:712" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="753:774" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="126:749" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="270:323" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="369:458" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="495:689" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="726:747" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="6:100" ph="..." />
+                <marker date="1554927533000" expanded="true" signature="149:304" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="202:223" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="281:302" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,13 +266,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state>
               <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="121:510" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="149:508" ph="{...}" />
-                <marker date="1554748779000" expanded="true" signature="423:502" ph="{...}" />
+                <marker date="1554820346000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1554820346000" expanded="true" signature="121:510" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="149:508" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="423:502" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -175,43 +280,75 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state>
               <folding>
-                <marker date="1554749721000" expanded="false" signature="6:97" ph="..." />
-                <marker date="1554749721000" expanded="true" signature="155:1157" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="405:476" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="502:550" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="595:943" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="707:826" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="1002:1030" ph="{...}" />
-                <marker date="1554749721000" expanded="true" signature="1082:1155" ph="{...}" />
+                <marker date="1554820346000" expanded="false" signature="6:97" ph="..." />
+                <marker date="1554820346000" expanded="true" signature="155:1157" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="405:476" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="502:550" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="595:943" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="707:826" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="1002:1030" ph="{...}" />
+                <marker date="1554820346000" expanded="true" signature="1082:1155" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="40">
+              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
               <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="121:210" ph="{...}" />
+                <marker date="1554909564000" expanded="false" signature="6:113" ph="..." />
+                <marker date="1554909564000" expanded="true" signature="158:2454" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="439:510" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="536:1367" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="1160:1261" ph="/* StateMachine.CurrentState = editEnvState; ... */" />
+                <marker date="1554909564000" expanded="true" signature="1404:1458" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="1502:2326" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="1561:2320" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="1790:2310" ph="{...}" />
+                <marker date="1554909564000" expanded="true" signature="2405:2452" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="150">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1554748779000" expanded="true" signature="103:219" ph="{...}" />
+                <marker date="1554927533000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1554927533000" expanded="true" signature="137:1411" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="247:268" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="303:324" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="360:656" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="521:650" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="691:1409" ph="{...}" />
+                <marker date="1554927533000" expanded="true" signature="1330:1403" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+              <folding>
+                <marker date="1554922239000" expanded="false" signature="6:275" ph="..." />
+                <marker date="1554922239000" expanded="true" signature="325:1975" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="550:1110" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="819:1104" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="1143:1492" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="1515:1968" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="1562:1962" ph="{...}" />
+                <marker date="1554922239000" expanded="true" signature="1636:1952" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -223,27 +360,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EditorUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs" />
+        <option value="$PROJECT_DIR$/Assets/BuilderUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" />
+        <option value="$PROJECT_DIR$/Assets/EditorUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIController.cs" />
       </list>
     </option>
   </component>
@@ -253,116 +384,25 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1337" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="685" />
+    <option name="y" value="552" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Environment" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="InProgress" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Managers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Saver" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="StateMachine" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="StateMachine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Interface" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="StateMachine" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="MainLevelStates" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="XV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assets" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Scripts" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="XVSavingData" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,17 +443,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a5c7ccfb-3210-447e-be97-5cd9e3e449e8" name="Default Changelist" comment="" />
-      <created>1554748975409</created>
+      <changelist id="f4d4056a-43f1-4df7-886a-a0e97bcae879" name="Default Changelist" comment="" />
+      <created>1554921703310</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554748975409</updated>
-      <workItem from="1554748984364" duration="3215000" />
+      <updated>1554921703310</updated>
+      <workItem from="1554921714692" duration="5000" />
+      <workItem from="1554921739176" duration="1497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3215000" />
+    <option name="totallyTimeSpent" value="1502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,20 +466,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
+    <frame x="682" y="753" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -446,17 +480,24 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -472,216 +513,109 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="660">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
           <folding>
-            <marker date="1554582520000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554582520000" expanded="true" signature="120:368" ph="{...}" />
-            <marker date="1554582520000" expanded="true" signature="179:366" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:32" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="74:1248" ph="{...}" />
-            <marker date="1554748779000" expanded="false" signature="116:234" ph="Position" />
-            <marker date="1554748779000" expanded="false" signature="244:391" ph="Rotation" />
-            <marker date="1554748779000" expanded="true" signature="528:807" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="854:980" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1030:1194" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1225:1246" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1274:1305" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:47" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="93:500" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="162:215" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="261:303" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="352:397" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="456:498" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:127" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="163:1143" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="213:420" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="455:1020" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="608:804" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1096:1141" ph="{...}" />
+            <marker date="1554922239000" expanded="false" signature="6:275" ph="..." />
+            <marker date="1554922239000" expanded="true" signature="325:1975" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="550:1110" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="819:1104" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="1143:1492" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="1515:1968" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="1562:1962" ph="{...}" />
+            <marker date="1554922239000" expanded="true" signature="1636:1952" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state>
           <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="121:510" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="149:508" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="423:502" ph="{...}" />
+            <marker date="1554820346000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1554820346000" expanded="true" signature="121:510" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="149:508" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="423:502" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/EditorUIController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="121:210" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="103:219" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="6:100" ph="..." />
+            <marker date="1554927533000" expanded="true" signature="149:304" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="202:223" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="281:302" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state>
           <folding>
-            <marker date="1554749721000" expanded="false" signature="6:97" ph="..." />
-            <marker date="1554749721000" expanded="true" signature="155:1157" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="405:476" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="502:550" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="595:943" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="707:826" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="1002:1030" ph="{...}" />
-            <marker date="1554749721000" expanded="true" signature="1082:1155" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1554753261000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554753261000" expanded="true" signature="137:407" ph="{...}" />
-            <marker date="1554753261000" expanded="true" signature="172:193" ph="{...}" />
-            <marker date="1554753261000" expanded="true" signature="228:249" ph="{...}" />
-            <marker date="1554753261000" expanded="true" signature="285:306" ph="{...}" />
-            <marker date="1554753261000" expanded="true" signature="341:405" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="126:749" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="270:323" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="369:458" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="495:689" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="726:747" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="130:801" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="164:185" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="220:241" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="277:298" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="333:799" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="376:396" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="438:458" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="500:520" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="562:582" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="632:652" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="703:723" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="773:793" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <marker date="1554748779000" expanded="true" signature="83:776" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="152:173" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="208:229" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="265:718" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="514:712" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="753:774" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <marker date="1554748779000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="137:1390" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="226:247" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="282:303" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="339:635" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="500:629" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="670:1388" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1309:1382" ph="{...}" />
+            <marker date="1554820346000" expanded="false" signature="6:97" ph="..." />
+            <marker date="1554820346000" expanded="true" signature="155:1157" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="405:476" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="502:550" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="595:943" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="707:826" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="1002:1030" ph="{...}" />
+            <marker date="1554820346000" expanded="true" signature="1082:1155" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="40">
+          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
           <folding>
-            <marker date="1554748779000" expanded="false" signature="6:113" ph="..." />
-            <marker date="1554748779000" expanded="true" signature="158:2455" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="439:510" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="536:1368" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1405:1459" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1503:2327" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1562:2321" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="1791:2311" ph="{...}" />
-            <marker date="1554748779000" expanded="true" signature="2406:2453" ph="{...}" />
+            <marker date="1554909564000" expanded="false" signature="6:113" ph="..." />
+            <marker date="1554909564000" expanded="true" signature="158:2454" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="439:510" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="536:1367" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="1160:1261" ph="/* StateMachine.CurrentState = editEnvState; ... */" />
+            <marker date="1554909564000" expanded="true" signature="1404:1458" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="1502:2326" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="1561:2320" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="1790:2310" ph="{...}" />
+            <marker date="1554909564000" expanded="true" signature="2405:2452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1554927533000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1554927533000" expanded="true" signature="137:1411" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="247:268" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="303:324" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="360:656" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="521:650" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="691:1409" ph="{...}" />
+            <marker date="1554927533000" expanded="true" signature="1330:1403" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1554927711000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1554927711000" expanded="true" signature="143:381" ph="{...}" />
+            <marker date="1554927711000" expanded="true" signature="222:265" ph="{...}" />
+            <marker date="1554927711000" expanded="true" signature="320:379" ph="{...}" />
           </folding>
         </state>
       </provider>

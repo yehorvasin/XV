@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class BuildingEnvironmatentState : MonoBehaviour, IState
 {
-    public string objectName;
+    public static string objectName = String.Empty;
     
     public void ActivateState()
     {
@@ -16,17 +17,23 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
 
     public void MouseInputAction()
     {
-        var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
-
-        var hit = new RaycastHit();
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, 1000))
+        if(!objectName.Equals(String.Empty))
         {
-            var go = Instantiate(prefab, hit.point, Quaternion.identity);
-            go.name = go.name.Replace("(Clone)", "");
-            go.AddComponent<EnvironmentObject>();
+            var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
+
+            var hit = new RaycastHit();
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, 1000))
+            {
+                var go = Instantiate(prefab, hit.point, Quaternion.identity);
+                go.name = go.name.Replace("(Clone)", "");
+                go.AddComponent<EnvironmentObject>();
+            }
+
+            return;
         }
+        UIController.Messege(Messenger.NoSelectObject);
     }
 
     public void KeysInputAction()

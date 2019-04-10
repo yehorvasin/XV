@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EditEnvironmentState : MonoBehaviour, IState
 {
-    public EnvironmentObject CurrentObjectToEdit;
+    public EnvironmentObject CurrentObjectToEdit { get; private set; }
     
     public void ActivateState()
     {
