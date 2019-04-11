@@ -24,10 +24,13 @@ public class XVAnimationController : MonoBehaviour
     public AnimCallBack onAnimationSelected;
     public AnimCallBack onAnimationSetuped;
 
-    private void Start()
+    private IEnumerator Start()
     {
-        setupAnimationsState = (SetupAnimationsState)GameController.Instance.StateMachine.CurrentState;
         GameController.Instance.AnimController = this;
+        yield return null;
+        setupAnimationsState = (SetupAnimationsState)GameController.Instance.StateMachine.CurrentState;
+        
+         
         playAnimCallback += Next;
         setupAnimationsState.mouseInputEvent.AddListener(OnInputMouse);
     }
@@ -87,6 +90,7 @@ public class XVAnimationController : MonoBehaviour
             if (tmp != null)
             {
                 currentSetupedAnim.go2 = tmp;
+                needObject = false;
                 CheckSetupedAnim();
             }
             
@@ -97,6 +101,7 @@ public class XVAnimationController : MonoBehaviour
             Vector3 p;
             if (SelectPoint(out p))
             {
+                needPoint = false;
                 currentSetupedAnim.points.Add(p);
                 CheckSetupedAnim();
             }
@@ -113,7 +118,11 @@ public class XVAnimationController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 1000))
         {
             var obj = hit.collider.GetComponent<EnvironmentObject>();
-            return hit.transform.gameObject;
+            if (obj != null)
+               {
+                    return hit.transform.gameObject;
+                    Debug.Log("Second object selected!");
+               }
         }
 
         return null;

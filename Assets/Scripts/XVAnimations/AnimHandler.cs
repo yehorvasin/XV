@@ -12,8 +12,9 @@ public class AnimHandler : MonoBehaviour
 //    public AnimCallBack callBack;
 //    private XVAnimation a;
 
-    private void Start()
+    private IEnumerator Start()
     {
+        yield return null;
         controller = GameController.Instance.AnimController;
     }
 

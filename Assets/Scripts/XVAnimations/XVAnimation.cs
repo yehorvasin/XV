@@ -6,7 +6,7 @@ public class XVAnimation : MonoBehaviour
 {
     public  GameObject go1;
     public GameObject go2;
-    public List<Vector3> points;
+    public List<Vector3> points = new List<Vector3>();
 
     virtual public bool IsSecondObjectNeeded()
     {

@@ -7,7 +7,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
 {
     public EnvironmentObject CurrentObjectToEdit;
 
-    [HideInInspector] public UnityEvent mouseInputEvent;
+    [HideInInspector] public UnityEvent mouseInputEvent = new UnityEvent();
 
     private enum AnimState {NO_OBJECT, CHOOSE_ANIM, SETUP}
     private AnimState _innerState = AnimState.NO_OBJECT;
@@ -38,7 +38,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
            }
            case AnimState.CHOOSE_ANIM:
            {
-               SelectObject();//if fail to chose object -> curent objectt = null
+               //SelectObject();//if fail to chose object -> curent objectt = null
                break;
            }
        }
@@ -69,6 +69,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
             var obj = hit.collider.GetComponent<EnvironmentObject>();
             CurrentObjectToEdit = obj;
             _innerState = AnimState.CHOOSE_ANIM;
+            Debug.Log("Object selected! You can now chhose animation for it!");
         }
         else
         {
