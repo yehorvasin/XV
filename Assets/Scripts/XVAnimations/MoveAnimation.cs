@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class MoveAnimation : XVAnimation
 {
+
+    public override string GetDescription()
+    {
+        return ("Move object to point 0");
+    }
+
     public override void Animate(AnimCallBack onEnd)
     {
         Debug.Log("Animate");
@@ -13,16 +19,14 @@ public class MoveAnimation : XVAnimation
 
     IEnumerator move( AnimCallBack onEnd)
     {
-//        while (Vector3.Distance(points[0], go1.transform.position) > 0.0001f)
-//        {
-//            float speed = 10;
-//            float step =  speed * Time.deltaTime; // calculate distance to move
-//            transform.position = Vector3.MoveTowards(go1.transform.position, points[0], step);
-//            Debug.Log("...");
-//            yield return null;
-//        }
-        yield return new WaitForSeconds(1);
-        go1.transform.position = points[0];
+       while (Vector3.Distance(points[0], go1.transform.position) > 0.0001f)
+       {
+           float speed = 5;
+           float step =  speed * Time.deltaTime; // calculate distance to move
+           go1.transform.position = Vector3.MoveTowards(go1.transform.position, points[0], step);
+           yield return null;
+       }
+        
         onEnd.Invoke();
         Debug.Log("End Animate");
         yield return null;

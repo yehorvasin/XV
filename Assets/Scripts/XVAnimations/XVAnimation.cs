@@ -18,6 +18,11 @@ public class XVAnimation : MonoBehaviour
         return 0;
     }
 
+    virtual public string GetDescription()
+    {
+        return "";
+    }
+
     public AnimCallBack finishSetap;
     virtual public void Animate(AnimCallBack onEnd)
     {

@@ -44,6 +44,7 @@ public class XVAnimationController : MonoBehaviour
         onAnimationSelected?.Invoke();
         animatedObjects.Add(setupAnimationsState.CurrentObjectToEdit);
         CheckSetupedAnim();
+        DisplayToUser(currentSetupedAnim.GetDescription());
     }
 
     private void CheckSetupedAnim()
@@ -52,7 +53,7 @@ public class XVAnimationController : MonoBehaviour
         {
             needObject = true;
             //print msg
-            Debug.Log("Need second object");
+            DisplayToUser("Need second object");
         }
         else
         {
@@ -63,7 +64,7 @@ public class XVAnimationController : MonoBehaviour
         if (currentSetupedAnim.points.Count < currentSetupedAnim.NumberOfPOintsNeeded() && !needObject)
         {
             needPoint = true;
-            Debug.Log("Need point");
+            DisplayToUser("Need point");
         }
         else
         {
@@ -72,7 +73,7 @@ public class XVAnimationController : MonoBehaviour
 
         if (!needObject && !needPoint)
         {
-            Debug.Log("Animation setuped succesfully!!");
+            DisplayToUser("Animation setuped succesfully!!");
             stack.Add(currentSetupedAnim);
             currentSetupedAnim = null;
             onAnimationSetuped?.Invoke();
@@ -124,7 +125,7 @@ public class XVAnimationController : MonoBehaviour
             if (obj != null)
                {
                    animatedObjects.Add(obj);
-                   Debug.Log("Second object selected!");
+                   DisplayToUser("Second object selected!");
                    return hit.transform.gameObject;
                     
                }
@@ -141,7 +142,7 @@ public class XVAnimationController : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 1000))
         {
 
-           Debug.Log("Point selected");
+            DisplayToUser("Point selected");
             res = hit.point;
             return true;
         }
@@ -176,6 +177,12 @@ public class XVAnimationController : MonoBehaviour
             }
             
         }
+    }
+
+    private void DisplayToUser(string str)
+    {
+        //some ui msg
+        Debug.Log(str);
     }
 
     public void ResetObjectPOsistions()
