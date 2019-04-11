@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,24 @@ public class GameController : MonoBehaviour
 
     public DontDestroy DontDestroy;
     
+    #region states
+
+    private BuildingEnvironmatentState _buildingEnvironmatentState;
+    private SetupAnimationsState _setupAnimationsState;
+    private EditEnvironmentState _editEnvironmentState;
+    private ViewModeState _viewModeState;
+
+    public BuildingEnvironmatentState BuildingEnvironmatentState => _buildingEnvironmatentState;
+    public SetupAnimationsState SetupAnimationsState => _setupAnimationsState;
+    public EditEnvironmentState EditEnvironmentState => _editEnvironmentState;
+    public ViewModeState ViewModeState => _viewModeState;
+
+    #endregion
+    
+    public CinemachineVirtualCamera OverviewCamera;
+    public CinemachineVirtualCamera FirstPersonCamera;
+    public CinemachineVirtualCamera FreeLookCamera;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -27,20 +46,19 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         StateMachine = GetComponent<StateMachine>();
-        var buildingState = gameObject.AddComponent<BuildingEnvironmatentState>();
-        var animationsState = gameObject.AddComponent<SetupAnimationsState>();
-        var editEnvState = gameObject.AddComponent<EditEnvironmentState>();
-        var viewModeState = gameObject.AddComponent<ViewModeState>();
+        _buildingEnvironmatentState = gameObject.AddComponent<BuildingEnvironmatentState>();
+        _setupAnimationsState = gameObject.AddComponent<SetupAnimationsState>();
+        _editEnvironmentState = gameObject.AddComponent<EditEnvironmentState>();
+        _viewModeState = gameObject.AddComponent<ViewModeState>();
         
-        StateMachine.States.Add(buildingState);
-        StateMachine.States.Add(animationsState);
-        StateMachine.States.Add(editEnvState);
-        StateMachine.States.Add(viewModeState);
+        StateMachine.States.Add(_buildingEnvironmatentState);
+        StateMachine.States.Add(_setupAnimationsState);
+        StateMachine.States.Add(_editEnvironmentState);
+        StateMachine.States.Add(_viewModeState);
 
-//        StateMachine.CurrentState = buildingState;
-//        StateMachine.CurrentState = editEnvState;
-//        StateMachine.CurrentState = viewModeState;
-        StateMachine.CurrentState = animationsState;
+//        StateMachine.CurrentState = _buildingEnvironmatentState;
+        StateMachine.CurrentState = _editEnvironmentState;
+//        StateMachine.CurrentState = _viewModeState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
         
