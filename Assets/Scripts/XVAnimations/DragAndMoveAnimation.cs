@@ -35,9 +35,10 @@ public class DragAndMoveAnimation : XVAnimation
         
         //place second object on second point
         yield return new WaitForSeconds(1);
-        go2.SetActive(true);
         go2.transform.position = points[1];
+        go2.SetActive(true);
         
+       yield return new WaitForSeconds(1);
         onEnd.Invoke();
         Debug.Log("End Animate");
         yield return null;

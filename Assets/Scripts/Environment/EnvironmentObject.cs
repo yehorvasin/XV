@@ -10,9 +10,12 @@ public class EnvironmentObject : MonoBehaviour
     [Range(1, 5)]
     public float TranslationSpeed = 5;
 
+    private Vector3 startPos;
+
     private void Start()
     {
         nameToDisplay = gameObject.name;
+        startPos = transform.position;
     }
 
     public void Translate(Vector3 direction)
@@ -24,6 +27,11 @@ public class EnvironmentObject : MonoBehaviour
     {
         var newAngle = transform.eulerAngles.y + angle /** Time.deltaTime*/;
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, newAngle, transform.eulerAngles.z);
+    }
+
+    public void ResetToStartPos()
+    {
+        transform.position = startPos;
     }
 
     public void ChangeDisplayName()

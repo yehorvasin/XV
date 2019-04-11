@@ -14,6 +14,6 @@ public class StateMachine : MonoBehaviour
     /// </summary>
     void Update()
     {
-        currStateStr = CurrentState.GetType().ToString();
+        currStateStr = CurrentState?.GetType().ToString();
     }
 }

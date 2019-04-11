@@ -24,6 +24,8 @@ public class XVAnimationController : MonoBehaviour
     public AnimCallBack onAnimationSelected;
     public AnimCallBack onAnimationSetuped;
 
+    private List<EnvironmentObject> animatedObjects = new List<EnvironmentObject>();
+
     private IEnumerator Start()
     {
         GameController.Instance.AnimController = this;
@@ -40,6 +42,7 @@ public class XVAnimationController : MonoBehaviour
         currentSetupedAnim = (XVAnimation) gameObject.AddComponent(animType);
         currentSetupedAnim.go1 = setupAnimationsState.CurrentObjectToEdit.gameObject;
         onAnimationSelected?.Invoke();
+        animatedObjects.Add(setupAnimationsState.CurrentObjectToEdit);
         CheckSetupedAnim();
     }
 
@@ -57,7 +60,7 @@ public class XVAnimationController : MonoBehaviour
             
         }
 
-        if (currentSetupedAnim.points.Count < currentSetupedAnim.NumberOfPOintsNeeded())
+        if (currentSetupedAnim.points.Count < currentSetupedAnim.NumberOfPOintsNeeded() && !needObject)
         {
             needPoint = true;
             Debug.Log("Need point");
@@ -96,7 +99,7 @@ public class XVAnimationController : MonoBehaviour
             
         }
 
-        if (needPoint)
+        else if (needPoint)
         {
             Vector3 p;
             if (SelectPoint(out p))
@@ -120,8 +123,10 @@ public class XVAnimationController : MonoBehaviour
             var obj = hit.collider.GetComponent<EnvironmentObject>();
             if (obj != null)
                {
-                    return hit.transform.gameObject;
-                    Debug.Log("Second object selected!");
+                   animatedObjects.Add(obj);
+                   Debug.Log("Second object selected!");
+                   return hit.transform.gameObject;
+                    
                }
         }
 
@@ -135,7 +140,8 @@ public class XVAnimationController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 1000))
         {
-            var obj = hit.collider.GetComponent<EnvironmentObject>();
+
+           Debug.Log("Point selected");
             res = hit.point;
             return true;
         }
@@ -160,9 +166,23 @@ public class XVAnimationController : MonoBehaviour
             stack[i].Animate(playAnimCallback);
         else
         {
-            //if cycled
+            ResetObjectPOsistions();
             i = 0;
-            stack[i].Animate(playAnimCallback);
+            //if cycled
+            if (isCycled)
+            {
+                
+                stack[i].Animate(playAnimCallback);
+            }
+            
+        }
+    }
+
+    public void ResetObjectPOsistions()
+    {
+        foreach (EnvironmentObject i in animatedObjects)
+        {
+            i.ResetToStartPos();
         }
     }
 

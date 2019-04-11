@@ -67,9 +67,12 @@ public class SetupAnimationsState : MonoBehaviour, IState
         if (Physics.Raycast(ray, out hit, 1000))
         {
             var obj = hit.collider.GetComponent<EnvironmentObject>();
-            CurrentObjectToEdit = obj;
-            _innerState = AnimState.CHOOSE_ANIM;
-            Debug.Log("Object selected! You can now chhose animation for it!");
+            if (obj != null)
+            {
+                CurrentObjectToEdit = obj;
+                _innerState = AnimState.CHOOSE_ANIM;
+                Debug.Log("Object selected! You can now chhose animation for it!");
+            }
         }
         else
         {
