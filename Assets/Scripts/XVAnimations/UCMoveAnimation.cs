@@ -22,8 +22,9 @@ public class UCMoveAnimation : XVAnimation
             animator = go1.GetComponent<Animator>();
 
             
-            agent.isStopped = false;
+            
             agent.destination = points[0];
+            agent.isStopped = false;
             animator.SetBool("walk", true);
              StartCoroutine(CheckIfOnPlace(onEnd));
         }
@@ -42,16 +43,16 @@ public class UCMoveAnimation : XVAnimation
 
     IEnumerator CheckIfOnPlace( AnimCallBack onEnd)
     {
-         Vector3 target = points[0];
-        while (agent.remainingDistance > 0.3f)
+        Vector3 target = points[0];
+        while (Vector3.Distance(target, go1.transform.position) > 0.01f)
        {
            
-           yield return null;
+           yield return new WaitForSeconds(0.1f);
        }
        
         agent.isStopped = true;
         animator.SetBool("walk", false);
-        //yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
         onEnd.Invoke();
         Debug.Log("End Animate");
        

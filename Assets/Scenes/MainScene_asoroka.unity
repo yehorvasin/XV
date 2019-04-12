@@ -98,11 +98,11 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    ledgeDropHeight: 1
+    maxJumpAcrossDistance: 1
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 347835243}
   - component: {fileID: 347835242}
   - component: {fileID: 347835246}
+  - component: {fileID: 347835247}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -765,6 +766,22 @@ MonoBehaviour:
   nameToDisplay: 
   unityChan: 0
   TranslationSpeed: 5
+--- !u!208 &347835247
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347835241}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 1, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &382137385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2229,7 @@ GameObject:
   - component: {fileID: 1115788640}
   - component: {fileID: 1115788639}
   - component: {fileID: 1115788638}
+  - component: {fileID: 1115788643}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2306,6 +2324,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1115788643
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115788637}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1134675369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,9 +3816,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.1981869
+  m_Height: 1.81
   m_Direction: 1
-  m_Center: {x: 0, y: 0.59909344, z: 0}
+  m_Center: {x: 0, y: 1.18, z: 0}
 --- !u!195 &2876437781793178930
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3982,7 +4016,7 @@ PrefabInstance:
     - target: {fileID: 2876437781793216720, guid: cffa4d5cbe3eb6743a98cd0e6094ed58,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 2876437781793216720, guid: cffa4d5cbe3eb6743a98cd0e6094ed58,
         type: 3}
