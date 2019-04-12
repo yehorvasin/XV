@@ -172,7 +172,10 @@ public class XVAnimationController : MonoBehaviour
     {
         i++;
         if (i < stack.Count)
-            stack[i].Animate(playAnimCallback);
+            {
+                stack[i].Animate(playAnimCallback);
+                Debug.Log("Next anim: " + i);
+            }
         else
         {
             ResetObjectPOsistions();

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnvironmentObject : MonoBehaviour
 {
     public string nameToDisplay;
+    public bool unityChan = false;
 
     [Header("Settings")]
     [Range(1, 5)]
