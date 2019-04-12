@@ -32,7 +32,7 @@ public class DragAndMoveAnimation : XVAnimation
            yield return null;
        }
         //take sekond object
-       go2.transform.position = go1.transform.position - 0.5f * go1.transform.forward;
+       go2.transform.position = go1.transform.position +  go1.transform.up;
        go2.transform.parent = go1.transform;
        StartCoroutine(moveToDestination(onEnd));
     }

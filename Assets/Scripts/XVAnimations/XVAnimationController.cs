@@ -30,11 +30,19 @@ public class XVAnimationController : MonoBehaviour
     {
         GameController.Instance.AnimController = this;
         yield return null;
-        setupAnimationsState = (SetupAnimationsState)GameController.Instance.StateMachine.CurrentState;
-        
-         
         playAnimCallback += Next;
+        
+    }
+
+    public void LinkDependencies(SetupAnimationsState _setupAnimationsState)
+    {
+        setupAnimationsState = _setupAnimationsState;
         setupAnimationsState.mouseInputEvent.AddListener(OnInputMouse);
+    }
+
+    public void Delink()
+    {
+        setupAnimationsState.mouseInputEvent.RemoveListener(OnInputMouse);
     }
 
     public void StartSetupAnimation(Type animType)

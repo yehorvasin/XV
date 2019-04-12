@@ -14,6 +14,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
 
     public void ActivateState()
     {
+        GameController.Instance.AnimController.LinkDependencies(this);
         GameController.Instance.AnimController.onAnimationSelected += AnimationSelected;
         GameController.Instance.AnimController.onAnimationSelected += AnimationSetaped;
 
@@ -21,6 +22,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
 
     public void DeactivateState()
     {
+         GameController.Instance.AnimController.Delink();
         GameController.Instance.AnimController.onAnimationSelected -= AnimationSelected;
         GameController.Instance.AnimController.onAnimationSelected -= AnimationSetaped;
     }
@@ -38,7 +40,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
            }
            case AnimState.CHOOSE_ANIM:
            {
-               //SelectObject();//if fail to chose object -> curent objectt = null
+               SelectObject();//if fail to chose object -> curent objectt = null
                break;
            }
        }
@@ -51,7 +53,9 @@ public class SetupAnimationsState : MonoBehaviour, IState
     
     public void AnimationSetaped()
     {
-        _innerState = AnimState.CHOOSE_ANIM;
+        _innerState = AnimState.NO_OBJECT;
+        // CurrentObjectToEdit = null;
+        // Debug.Log("Choose object to continue");
     }
 
     public void KeysInputAction()
@@ -76,8 +80,8 @@ public class SetupAnimationsState : MonoBehaviour, IState
         }
         else
         {
-            CurrentObjectToEdit = null;
-            _innerState = AnimState.NO_OBJECT;
+            // CurrentObjectToEdit = null;
+            // _innerState = AnimState.NO_OBJECT;
         }
     }
 
