@@ -82,11 +82,12 @@ public class GameController : MonoBehaviour
                     new Quaternion(element.X_Rotation, element.Y_Rotation, element.Z_Rotation, element.W_Rotation));
                 
                 go.name = go.name.Replace("(Clone)", "");
-                go.AddComponent<EnvironmentObject>();
+                var obj = go.AddComponent<EnvironmentObject>();
+                obj.nameToDisplay = element.displayName;
             }
         }
     }
-    
+
     //TEMP
     [ContextMenu("Back To Menu")]
     public void BackToMenu()

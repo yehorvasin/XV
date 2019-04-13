@@ -24,8 +24,11 @@ public class Saver : MonoBehaviour
         
         foreach (var obj in all)
         {
-            var xvDataObj = new XVObjectData(obj.transform.position, obj.transform.rotation);
-            xvDataObj.objectName = obj.name;
+            var xvDataObj = new XVObjectData(obj.transform.position, obj.transform.rotation)
+            {
+                objectName = obj.name,
+                displayName = obj.nameToDisplay
+            };
             saveList.Add(xvDataObj);
         }
 

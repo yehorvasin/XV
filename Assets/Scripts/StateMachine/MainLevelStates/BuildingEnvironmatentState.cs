@@ -26,6 +26,9 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
             var go = Instantiate(prefab, hit.point, Quaternion.identity);
             go.name = go.name.Replace("(Clone)", "");
             go.AddComponent<EnvironmentObject>();
+
+            //AutoSave after new object built on the scene
+            GameController.Instance.Saver.SaveSceneData();
         }
     }
 

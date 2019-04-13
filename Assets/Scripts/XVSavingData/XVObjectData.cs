@@ -4,8 +4,6 @@ using UnityEngine;
 [Serializable]
 public class XVObjectData
 {
-    public string objectName;
-    
     #region Position
     public float X_Position;
     public float Y_Position;
@@ -19,6 +17,9 @@ public class XVObjectData
     public float W_Rotation;
     #endregion
 
+    public string objectName;
+    public string displayName;
+    
     public LoadFromType LoadFromType;
     public string bundlePath;
     
