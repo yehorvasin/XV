@@ -19,6 +19,10 @@
             <e p="GameController.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
           </e>
+          <e p="PlayerControllerMovement" t="Include">
+            <e p="PlayerLook.cs" t="Include" />
+            <e p="PlayerMove.cs" t="Include" />
+          </e>
           <e p="Saver" t="Include">
             <e p="Saver.cs" t="Include" />
           </e>
