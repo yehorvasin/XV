@@ -54,6 +54,7 @@ public class GameController : MonoBehaviour
 
 //        StateMachine.CurrentState = _buildingEnvironmatentState;
 //        StateMachine.CurrentState = _editEnvironmentState;
+//        StateMachine.CurrentState = _setupAnimationsState;
         StateMachine.CurrentState = _viewModeState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
@@ -77,7 +78,7 @@ public class GameController : MonoBehaviour
             foreach (var element in objects)
             {
                 var go = Instantiate(
-                    EnvironmentResourcesManager.Instance.ResourcesObjects.Find(x => x.name == element.objectName),
+                    EnvironmentResourcesManager.ResourcesObjects.Find(x => x.name == element.objectName),
                     new Vector3(element.X_Position, element.Y_Position, element.Z_Position),
                     new Quaternion(element.X_Rotation, element.Y_Rotation, element.Z_Rotation, element.W_Rotation));
                 
