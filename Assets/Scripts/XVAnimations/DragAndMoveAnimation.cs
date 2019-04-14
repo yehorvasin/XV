@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class DragAndMoveAnimation : XVAnimation
 {
+    float start_y;
+    
     public override string GetDescription()
     {
         return ("Move object to second one, take it, go to the point 0 and place second object on point 1");
     }
     public override void Animate(AnimCallBack onEnd)
     {
+        start_y = go1.transform.position.y;
         Debug.Log("Animate");
         StartCoroutine(move(onEnd));
     }
@@ -23,16 +26,20 @@ public class DragAndMoveAnimation : XVAnimation
     
     private IEnumerator moveToFirst( AnimCallBack onEnd)
     {
+        Vector3 tmp;
         Vector3 target = go2.transform.position;
-        while (Vector3.Distance(target, go1.transform.position) > 0.0001f)
+        float delta = Mathf.Abs(target.y - start_y);
+        while (Vector3.Distance(target, go1.transform.position) > delta)
        {
-           float speed = 5;
-           float step =  speed * Time.deltaTime;
-           go1.transform.position = Vector3.MoveTowards(go1.transform.position, target, step);
+           
+           float step =  speed * Time.deltaTime * 5;
+           tmp = Vector3.MoveTowards(go1.transform.position, target, step);
+           tmp.y = start_y;
+           go1.transform.position = tmp;
            yield return null;
        }
         //take sekond object
-       go2.transform.position = go1.transform.position +  go1.transform.up;
+       go2.transform.position = go1.transform.position +  go1.transform.up * 1.5f;
        go2.transform.parent = go1.transform;
        StartCoroutine(moveToDestination(onEnd));
     }
@@ -40,12 +47,16 @@ public class DragAndMoveAnimation : XVAnimation
     private IEnumerator moveToDestination( AnimCallBack onEnd)
     {
         //go to next pos
-         Vector3 target = points[0];
-        while (Vector3.Distance(target, go1.transform.position) > 0.0001f)
+        Vector3 tmp;
+        Vector3 target = points[0];
+        float delta = Mathf.Abs(target.y - start_y);
+        while (Vector3.Distance(target, go1.transform.position) > delta)
        {
-           float speed = 5;
-           float step =  speed * Time.deltaTime;
-           go1.transform.position = Vector3.MoveTowards(go1.transform.position, target, step);
+          
+           float step =  speed * Time.deltaTime * 5;
+           tmp = Vector3.MoveTowards(go1.transform.position, target, step);
+           tmp.y = start_y;
+           go1.transform.position = tmp;
            yield return null;
        }
 

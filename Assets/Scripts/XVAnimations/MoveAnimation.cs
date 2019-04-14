@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class MoveAnimation : XVAnimation
 {
-
+    float start_y;
+    
     public override string GetDescription()
     {
         return ("Move object to point 0");
@@ -13,17 +14,23 @@ public class MoveAnimation : XVAnimation
 
     public override void Animate(AnimCallBack onEnd)
     {
+        start_y = go1.transform.position.y;
         Debug.Log("Animate");
         StartCoroutine(move(onEnd));
     }
 
     IEnumerator move( AnimCallBack onEnd)
     {
-       while (Vector3.Distance(points[0], go1.transform.position) > 0.0001f)
+        Vector3 tmp;
+        Vector3 target = points[0];
+        float delta = Mathf.Abs(target.y - start_y);
+       while (Vector3.Distance(target, go1.transform.position) > delta)
        {
-           float speed = 5;
-           float step =  speed * Time.deltaTime; // calculate distance to move
-           go1.transform.position = Vector3.MoveTowards(go1.transform.position, points[0], step);
+          
+           float step =  speed * Time.deltaTime * 5; // calculate distance to move
+           tmp = Vector3.MoveTowards(go1.transform.position, target, step);
+           tmp.y = start_y;
+           go1.transform.position = tmp;
            yield return null;
        }
         

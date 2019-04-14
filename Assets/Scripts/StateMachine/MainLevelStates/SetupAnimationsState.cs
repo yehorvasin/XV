@@ -40,7 +40,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
            }
            case AnimState.CHOOSE_ANIM:
            {
-               SelectObject();//if fail to chose object -> curent objectt = null
+              // SelectObject();//if fail to chose object -> curent objectt = null
                break;
            }
        }

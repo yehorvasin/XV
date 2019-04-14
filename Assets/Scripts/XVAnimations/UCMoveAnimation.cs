@@ -8,6 +8,8 @@ public class UCMoveAnimation : XVAnimation
     private Animator animator;
     private NavMeshAgent agent;
 
+    private float startAnimSpeed, startAgentSpeed;
+
      public override string GetDescription()
     {
         return ("Unity-chan walk to point 0");
@@ -34,7 +36,10 @@ public class UCMoveAnimation : XVAnimation
                     agent.path = path;
                     agent.isStopped = false;
                     animator.SetBool("walk", true);
-                    animator.speed = 1;
+                    startAnimSpeed = animator.speed;
+                    startAgentSpeed = agent.speed;
+                    animator.speed = speed;
+                    agent.speed = speed * 2;
                     StartCoroutine(CheckIfOnPlace(onEnd));
                 }
                 else
@@ -88,6 +93,8 @@ public class UCMoveAnimation : XVAnimation
                }
                else
                {
+                   animator.speed = startAnimSpeed;
+                   agent.speed = startAgentSpeed;
                    onEnd.Invoke();
                    Debug.Log("Invalid Path. End Animate");
                    break;
@@ -105,6 +112,8 @@ public class UCMoveAnimation : XVAnimation
            }
        }
        
+        animator.speed = startAnimSpeed;
+        agent.speed = startAgentSpeed;
         agent.isStopped = true;
         animator.SetBool("walk", false);
         yield return new WaitForSeconds(1);
