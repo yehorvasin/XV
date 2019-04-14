@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
             Instance = this;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         StateMachine = GetComponent<StateMachine>();
         _buildingEnvironmatentState = gameObject.AddComponent<BuildingEnvironmatentState>();
@@ -61,6 +61,9 @@ public class GameController : MonoBehaviour
         StateMachine.CurrentState.ActivateState();
 
         DontDestroy = FindObjectOfType<DontDestroy>();
+
+        while (EnvironmentResourcesManager.isReady == false)
+            yield return null;
         
         DeserializeSceneContent();
     }

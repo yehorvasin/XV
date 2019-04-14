@@ -62,6 +62,8 @@ public class UIController : MonoBehaviour
     
     public void ActivateAnimationsUi()
     {
-        
+        GameController.StateMachine.CurrentState.DeactivateState();
+        GameController.StateMachine.CurrentState = GameController.SetupAnimationsState;
+        GameController.StateMachine.CurrentState.ActivateState();
     }
 }

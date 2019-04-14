@@ -18,9 +18,13 @@ public class BuilderUIController : MonoBehaviour
    
     private GameObject selectedGameObject;
 
-    private void Start()
+    private IEnumerator Start()
     {
         uiController = GetComponent<UIController>();
+
+        while (GameController.Instance.EnvironmentResourcesManager.isReady == false)
+            yield return null;
+        
         resourcesObjects = EnvironmentResourcesManager.Instance.ResourcesObjects;
         var parentContent = builderScrollView.GetComponent<ScrollRect>().content;
         

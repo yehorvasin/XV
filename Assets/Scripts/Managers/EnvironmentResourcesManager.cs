@@ -12,6 +12,8 @@ public class EnvironmentResourcesManager : MonoBehaviour
     private List<GameObject> _resourcesObjects = new List<GameObject>();
     public List<GameObject> ResourcesObjects => _resourcesObjects;
 
+    public bool isReady = false;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -21,6 +23,7 @@ public class EnvironmentResourcesManager : MonoBehaviour
     private void Start()
     {
         LoadObjectsFromResources();
+        StartCoroutine(LoadObjectsFromBundle());
     }
 
     private void LoadObjectsFromResources()
@@ -37,21 +40,35 @@ public class EnvironmentResourcesManager : MonoBehaviour
             _resourcesObjects.Add(objects[i] as GameObject);
     }
 
-    public IEnumerator LoadObjectsFromBundle(string bundleURL)
+    public IEnumerator LoadObjectsFromBundle()
     {
-        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(bundleURL, 1, 0);
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError || www.isHttpError)
-            Debug.Log(www.error);
-        else
+        XVScenesDataList bundlesData = null;
+        if (PlayerPrefs.HasKey("bundles"))
         {
-            AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(www);
-
-            var objects = bundle.LoadAllAssets<GameObject>();
-            foreach (var obj in objects)
-                _resourcesObjects.Add(obj);
+            var json = PlayerPrefs.GetString("bundles");
+            bundlesData = JsonUtility.FromJson<XVScenesDataList>(json);
         }
+
+        if (bundlesData != null)
+        {
+            foreach (var data in bundlesData.list)
+            {
+                UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(data, 1, 0);
+                yield return www.SendWebRequest();
+
+                if (www.isNetworkError || www.isHttpError)
+                    Debug.Log(www.error);
+                else
+                {
+                    AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(www);
+                    var objects = bundle.LoadAllAssets<GameObject>();
+                    foreach (var obj in objects)
+                        _resourcesObjects.Add(obj);
+                }
+            }
+        }
+
+        isReady = true;
     }
 
     public GameObject GetObjectByName(string name)

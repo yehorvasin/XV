@@ -18,7 +18,7 @@ public class TestLoadAssetBundle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 //            StartCoroutine(EnvironmentResourcesManager.Instance.LoadObjectsFromBundle("file://Users/yvasin/Desktop/cars1/"));
-            StartCoroutine(EnvironmentResourcesManager.Instance.LoadObjectsFromBundle("https://www.dropbox.com/s/12z5d8z21bcp8pr/car3?dl=1"));
+//            StartCoroutine(EnvironmentResourcesManager.Instance.LoadObjectsFromBundle("https://www.dropbox.com/s/12z5d8z21bcp8pr/car3?dl=1"));
         }
     }
 }
