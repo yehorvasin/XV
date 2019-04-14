@@ -3954,6 +3954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resourcesObjects: []
+  isReady: 0
 --- !u!1 &915295707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,7 +4850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34901962, g: 0.4066445, b: 0.5764706, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6042,6 +6043,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EditorUiContent: {fileID: 915295707}
+  PalitraButtons:
+  - {fileID: 1104163288}
+  - {fileID: 462355306}
+  - {fileID: 440263601}
+  - {fileID: 1150798013}
+  - {fileID: 1260116}
+  - {fileID: 1122421147}
+  - {fileID: 289693515}
+  - {fileID: 1763124404}
+  - {fileID: 560876523}
+  - {fileID: 1098734401}
+  - {fileID: 1885607485}
+  - {fileID: 756958322}
   inputField: {fileID: 1073974203}
 --- !u!1 &1763124402
 GameObject:
