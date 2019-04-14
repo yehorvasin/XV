@@ -20,7 +20,7 @@ public class BuilderUIController : MonoBehaviour
 
     private IEnumerator Start()
     {
-        uiController = GetComponent<UIController>();
+        uiController = GameController.Instance.UiController;
 
         while (GameController.Instance.EnvironmentResourcesManager.isReady == false)
             yield return null;
