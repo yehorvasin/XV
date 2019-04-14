@@ -91,6 +91,13 @@ public class GameController : MonoBehaviour
                 go.name = go.name.Replace("(Clone)", "");
                 var obj = go.AddComponent<EnvironmentObject>();
                 obj.nameToDisplay = element.displayName;
+                
+//                var renderers = obj.GetComponentsInChildren<Renderer>();
+//                foreach (var r in renderers)
+//                {
+//                    var color = new Color(element.r, element.g, element.b, element.a);
+//                    r.material.color = color;
+//                }
             }
         }
     }

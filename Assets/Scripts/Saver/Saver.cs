@@ -25,6 +25,7 @@ public class Saver : MonoBehaviour
                 objectName = obj.name,
                 displayName = obj.nameToDisplay
             };
+            xvDataObj.SetColor(obj.color);
             saveList.Add(xvDataObj);
         }
 

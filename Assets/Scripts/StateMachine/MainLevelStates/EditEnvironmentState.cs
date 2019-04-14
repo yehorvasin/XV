@@ -63,5 +63,7 @@ public class EditEnvironmentState : MonoBehaviour, IState
         {
             renderers[i].material.color = color;
         }
+
+        _currentObjectToEdit.color = color;
     }
 }

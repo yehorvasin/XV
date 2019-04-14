@@ -11,6 +11,8 @@ public class EnvironmentObject : MonoBehaviour
     [Range(1, 5)]
     public float TranslationSpeed = 5;
 
+    public Color color;
+
     private Vector3 startPos;
 
     private void Start()
