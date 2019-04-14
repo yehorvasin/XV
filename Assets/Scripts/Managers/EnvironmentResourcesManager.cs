@@ -6,20 +6,12 @@ using UnityEngine.Networking;
 
 public class EnvironmentResourcesManager : MonoBehaviour
 {
-    public static EnvironmentResourcesManager Instance;
-    
     [SerializeField]
     private List<GameObject> _resourcesObjects = new List<GameObject>();
     public List<GameObject> ResourcesObjects => _resourcesObjects;
 
     public bool isReady = false;
     
-    private void Awake()
-    {
-        if (Instance == null)
-            Instance = this;
-    }
-
     private void Start()
     {
         LoadObjectsFromResources();

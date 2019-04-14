@@ -25,7 +25,7 @@ public class BuilderUIController : MonoBehaviour
         while (GameController.Instance.EnvironmentResourcesManager.isReady == false)
             yield return null;
         
-        resourcesObjects = EnvironmentResourcesManager.Instance.ResourcesObjects;
+        resourcesObjects = GameController.Instance.EnvironmentResourcesManager.ResourcesObjects;
         var parentContent = builderScrollView.GetComponent<ScrollRect>().content;
         
         foreach (var obj in resourcesObjects)

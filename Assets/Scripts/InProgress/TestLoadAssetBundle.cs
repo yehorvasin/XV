@@ -10,7 +10,7 @@ public class TestLoadAssetBundle : MonoBehaviour
     
     private void Start()
     {
-        _manager = EnvironmentResourcesManager.Instance;
+        _manager = GameController.Instance.EnvironmentResourcesManager;
     }
 
     private void Update()

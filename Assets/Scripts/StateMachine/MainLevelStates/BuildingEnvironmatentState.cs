@@ -23,7 +23,7 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
 
         if (!objectName.Equals(String.Empty))
         {
-            var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
+            var prefab = GameController.Instance.EnvironmentResourcesManager.GetObjectByName(objectName);
 
             var hit = new RaycastHit();
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
