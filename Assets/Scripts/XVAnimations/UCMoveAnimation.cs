@@ -21,15 +21,43 @@ public class UCMoveAnimation : XVAnimation
             agent = go1.GetComponent<NavMeshAgent>();
             animator = go1.GetComponent<Animator>();
 
-            
-            
-            agent.destination = points[0];
-            agent.isStopped = false;
-            animator.SetBool("walk", true);
-             StartCoroutine(CheckIfOnPlace(onEnd));
+            if (points[0].y > 0f)
+                points[0] = new Vector3(points[0].x, 0f, points[0].z);
+            Debug.Log(points[0]);
+                
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(points[0], out hit, 2.0f, NavMesh.AllAreas))
+            {
+                NavMeshPath path = new NavMeshPath();
+                if (NavMesh.CalculatePath(go1.transform.position, hit.position, NavMesh.AllAreas, path))
+                {
+                    agent.path = path;
+                    agent.isStopped = false;
+                    animator.SetBool("walk", true);
+                    animator.speed = 1;
+                    StartCoroutine(CheckIfOnPlace(onEnd));
+                }
+                else
+                {
+                    onEnd.Invoke();
+                    Debug.Log("Invalid Path. End Animate");
+                }
+                
+                
+               // agent.destination = hit.position;
+                
+            }
+            else
+            {
+                onEnd.Invoke();
+                Debug.Log("Invalid Path. End Animate");
+            }
+
+           
         }
         else
         {
+            onEnd.Invoke();
             Debug.Log("Not a unity chan!");
         }
     }
@@ -46,8 +74,35 @@ public class UCMoveAnimation : XVAnimation
         Vector3 target = points[0];
         while (Vector3.Distance(target, go1.transform.position) > 0.01f)
        {
-           
            yield return new WaitForSeconds(0.1f);
+           
+           NavMeshHit hit;
+           if (NavMesh.SamplePosition(points[0], out hit, 2.0f, NavMesh.AllAreas))
+           {
+               NavMeshPath path = new NavMeshPath();
+               if (NavMesh.CalculatePath(go1.transform.position, hit.position, NavMesh.AllAreas, path))
+               {
+                   agent.path = path;
+                 
+                  
+               }
+               else
+               {
+                   onEnd.Invoke();
+                   Debug.Log("Invalid Path. End Animate");
+                   break;
+               }
+                
+                
+               // agent.destination = hit.position;
+                
+           }
+           else
+           {
+               onEnd.Invoke();
+               Debug.Log("Invalid Path. End Animate");
+               break;
+           }
        }
        
         agent.isStopped = true;
