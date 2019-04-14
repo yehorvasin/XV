@@ -2,8 +2,606 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c7ccfb-3210-447e-be97-5cd9e3e449e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollAnim.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollAnim.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollAnimBack.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollAnimBack.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollViewHolder.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/BuilderScrollViewHolder.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BuilderUIController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BuilderUIController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EditorUIController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EditorUIController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button + Input.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button + Input.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Button.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scroll View (1).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scroll View (1).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/unitychan Variant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/unitychan Variant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene_asoroka.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene_asoroka.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene_asoroka.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene_asoroka/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene_asoroka/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/Messenger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/Messenger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/AnimHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/AnimHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/DragAndMoveAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/DragAndMoveAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/MoveAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/MoveAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/RandomOne.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/RandomOne.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/UCMoveAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/UCMoveAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/XVAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/XVAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/XVAnimationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/XVAnimations/XVAnimationController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UIController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UIController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_ARpose1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_ARpose1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_ARpose2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_ARpose2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_DAMAGED00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_DAMAGED00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_DAMAGED01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_DAMAGED01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_HANDUP00_R.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_HANDUP00_R.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP00B.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP00B.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP01B.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_JUMP01B.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_LOSE00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_LOSE00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_REFLESH00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_REFLESH00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_F.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_F.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_L.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_L.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_R.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_RUN00_R.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_SLIDE00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_SLIDE00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_UMATOBI00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_UMATOBI00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT01.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT01.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT03.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT03.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT04.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WAIT04.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_B.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_B.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_F.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_F.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_L.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_L.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_R.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WALK00_R.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WIN00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animations/unitychan_WIN00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanARPose 1.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanARPose 1.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanARPose.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanARPose.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanActionCheck 1.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanActionCheck 1.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanActionCheck.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanActionCheck.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanLocomotions.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Animators/UnityChanLocomotions.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/SplashScreen.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/SplashScreen.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/WebPlayerTemplate.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/WebPlayerTemplate.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/unitychan_dynamic.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/unitychan_dynamic.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/unitychan_shader.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Documentation/unitychan_shader.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Editor/CreateLocatorHere.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Editor/CreateLocatorHere.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/ASHAMED.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/ASHAMED.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_A.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_A.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_E.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_E.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_I.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_I.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_O.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_O.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_U.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/MTH_U.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/SURPRISE.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/SURPRISE.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/angry1@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/angry1@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/angry2@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/angry2@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/conf@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/conf@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/default@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/default@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/disstract1@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/disstract1@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/disstract2@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/disstract2@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/eye_close@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/eye_close@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/face only mask.mask" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/face only mask.mask.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/sap@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/sap@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/smile1@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/smile1@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/smile2@unitychan.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/FaceAnimation/smile2@unitychan.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Character Use Guidelines.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Character Use Guidelines.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/LicenseNotice.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/LicenseNotice.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Summary Unity-Chan License.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Summary Unity-Chan License.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Unity-Chan License Terms and Condition.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ENGLISH/Unity-Chan License Terms and Condition.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_LOGO_rules02.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_LOGO_rules02.ai.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_LOGO_rules02.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_LOGO_rules02.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_140304.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_140304.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_en.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_en.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_en_140304.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/License Logo/LUUL_logo-guideline_en_140304.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/キャラクター利用のガイドライン.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/キャラクター利用のガイドライン.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ユニティちゃんライセンス条項.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ユニティちゃんライセンス条項.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ユニティちゃんライセンス条項・要約版.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ユニティちゃんライセンス条項・要約版.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ライセンス表示について.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/License/ライセンス表示について.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/BoxUnityChan.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/BoxUnityChan.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/Left.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/Left.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/Right.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/Right.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/body.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/body.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eye_L1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eye_L1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eye_R1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eye_R1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eyebase.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eyebase.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eyeline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/eyeline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/face.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/face.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/hair.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/hair.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/mat_cheek.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/mat_cheek.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/skin1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/Materials/skin1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/body.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/body.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eye_L1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eye_L1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eye_R1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eye_R1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eyebase.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eyebase.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eyeline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/eyeline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/face.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/face.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/hair.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/hair.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/mat_cheek.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/mat_cheek.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/skin1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Materials/skin1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaMain.cg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaMain.cg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaOutline.cg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaOutline.cg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaSkin.cg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/CharaSkin.cg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_akarami_blend.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_akarami_blend.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye_blend.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eye_blend.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eyelash_blend.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_eyelash_blend.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_fuku_ds.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hada_blend.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Shader/Unitychan_chara_hair_ds.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/DEFAULT_NORMAL.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/DEFAULT_NORMAL.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/ENV2.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/ENV2.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_CLOTH1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_CLOTH1.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_RIM1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_RIM1.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_SKIN1.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/FO_SKIN1.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01_NRM.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01_NRM.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01_SPEC.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/body_01_SPEC.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/cheek_00.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/cheek_00.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eye_iris_L_00.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eye_iris_L_00.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eye_iris_R_00.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eye_iris_R_00.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eyeline_00.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/eyeline_00.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/face_00.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/face_00.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/guide.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/guide.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01_NRM.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01_NRM.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01_SPEC.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/hair_01_SPEC.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/skin_01.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/UnityChanShader/Texture/skin_01.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/unitychan.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Models/unitychan.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/BoxUnityChan.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/BoxUnityChan.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/Directional light for UnityChan.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/Directional light for UnityChan.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/Locator_IKtarget.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/Locator_IKtarget.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/LookPos.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/LookPos.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/CamPos.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/CamPos.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/FrontPos.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/FrontPos.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/JumpPos.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/JumpPos.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/LookAtPos.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/LookAtPos.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/Main Camera.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/Main Camera.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/unitychan.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/unitychan.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/unitychan_dynamic_locomotion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/for Locomotion/unitychan_dynamic_locomotion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/unitychan.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/unitychan.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/unitychan_dynamic.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Prefabs/unitychan_dynamic.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/ReadMe.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/ReadMe/ReadMe_en.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/ReadMe/ReadMe_en.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/ReadMe/ReadMe_jp.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/ReadMe/ReadMe_jp.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/ARPoseTest.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/ARPoseTest.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/ActionCheck.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/ActionCheck.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/Locomotion.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/Locomotion.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/SecondaryAnimation.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Scenes/SecondaryAnimation.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/FadeIn.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/FadeIn.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/FadeOut.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/FadeOut.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/Voice.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animations/Voice.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animators/SplashScreen.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Animators/SplashScreen.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Logo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Logo/Dark_Silhouette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Logo/Dark_Silhouette.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Logo/Light_Silhouette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Logo/Light_Silhouette.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Scripts/SplashScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/Scripts/SplashScreen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/SplashScreen_Dark.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/SplashScreen_Dark.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/SplashScreen_Light.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/SplashScreen/SplashScreen_Light.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile5.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile5.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Materials/unitychan_tile6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/AlphaMask.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/AlphaMask.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/Textures/AlphaMask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/Textures/AlphaMask.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/Textures/Unity_Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Shader/Textures/Unity_Icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Stage/Textures/unitychan_tile6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/unity-chan_voice_list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/unity-chan_voice_list.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0001.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0001.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0003.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0003.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0004.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0004.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0006.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0006.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0007.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0007.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0009.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0009.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0013.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0013.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0018.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0018.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0019.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityChan/Voice/univ0019.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.XVgit/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine/cm_logo_lg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine/cm_logo_lg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FloorMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_2.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/1m3_crate/_Wood_Cherry_Original_2.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/40x15_box.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set/Wood_Floor_Light.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/L_shaped_desk_chair_and_computer_set/Wood_Floor_Light.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cage_trolley.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/cantilever.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_printer.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/classic_table2Prefab.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/closed_cardboard_box.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/conveyer_style_2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/document/_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/document/_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift/_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_forklift/_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/Pallet01.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/Pallet01.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Beige_2.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Beige_2.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Metal_Steel_Textured_White_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/electric_front-loader/_Metal_Steel_Textured_White_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/empty_pallet/_9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre/_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/etiquette code barre/_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/hydraulic_pallet_lift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/inspection_table.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/kardex.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift/_Metal_Aluminum_Anodized_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/manual_forklift/_Metal_Aluminum_Anodized_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_Carpet_LightGray_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_Carpet_LightGray_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_CorrogateShiny_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/movable_parts_cabinet/_CorrogateShiny_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table/Wood_Floor_Light.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/packaging_table/Wood_Floor_Light.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/EPAL_Motiv_Richtlinie_1_.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/EPAL_Motiv_Richtlinie_1_.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/Wood_OSB.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/Wood_OSB.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/_Beige_3.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/_Beige_3.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/eur.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/eur.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/ippc.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet/ippc.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_conveyer.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_2700.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_rack_type_3600.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_15.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_15.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_19.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_19.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_20.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_20.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_24.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_24.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_25.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_25.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_Beige_3.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/pallet_with_boxes/_Beige_3.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/paper_tray.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/DVAS063W.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/DVAS063W.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/PRGPS50280.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/PRGPS50280.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/biz.bmp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/photocopier/biz.bmp.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plastic_crate.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley/_OSB__chip_board__.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/plateform_trolley/_OSB__chip_board__.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/Tile_Hexagon_White.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/Tile_Hexagon_White.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/_Metal_Corrogated_Shiny_1.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/retractable_forklift/_Metal_Corrogated_Shiny_1.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/serving_cart.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Base_3D/shelves2.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EnvironmentObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress/DontDestroy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InProgress/ScenesButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InProgress/ScenesButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saver.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saver.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/Interface/IState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVScenesDataList.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVScenesDataList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,148 +624,165 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="27" />
+          <entry key="cs" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="27" />
+          <entry key="C#" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="3482" />
+          <entry key="cs" value="4146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="3482" />
+          <entry key="C#" value="4146" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5528701">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="39" selection-start-line="39" selection-end-line="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputHandler.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="20" selection-start-line="20" selection-end-line="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-                  <folding>
-                    <marker date="1555255456000" expanded="true" signature="6:127" ph="..." />
-                    <marker date="1555255456000" expanded="true" signature="185:1653" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="435:506" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="532:580" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="625:973" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="737:856" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="1037:1526" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="1275:1520" ph="{...}" />
-                    <marker date="1555255456000" expanded="true" signature="1578:1651" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MainMenuManager.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-                  <folding>
-                    <marker date="1555257386000" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1555257386000" expanded="true" signature="124:786" ph="{...}" />
-                    <marker date="1555257386000" expanded="true" signature="228:268" ph="{...}" />
-                    <marker date="1555257386000" expanded="true" signature="308:528" ph="{...}" />
-                    <marker date="1555257386000" expanded="true" signature="564:784" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/InProgress/TestLoadAssetBundle.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-                  <folding>
-                    <marker date="1555255395000" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1555255395000" expanded="true" signature="128:686" ph="{...}" />
-                    <marker date="1555255395000" expanded="true" signature="240:309" ph="{...}" />
-                    <marker date="1555255395000" expanded="true" signature="336:684" ph="{...}" />
-                    <marker date="1555255395000" expanded="true" signature="387:678" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <marker date="1555262436000" expanded="false" signature="6:132" ph="..." />
+                <marker date="1555262436000" expanded="true" signature="177:3554" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="594:1161" ph="states" />
+                <marker date="1555262436000" expanded="true" signature="1355:1426" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="1452:2413" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="2132:2307" ph="/* StateMachine.CurrentState = _editEnvironmentState; ... */" />
+                <marker date="1555262436000" expanded="true" signature="2450:2504" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="2548:3430" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="2607:3424" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="2836:3414" ph="{...}" />
+                <marker date="1555262436000" expanded="true" signature="3505:3552" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/UIController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+              <folding>
+                <marker date="1555263255000" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555263255000" expanded="true" signature="143:2014" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="378:522" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="566:602" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="657:716" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="753:1135" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="1171:1547" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="1586:1947" ph="{...}" />
+                <marker date="1555263255000" expanded="true" signature="1991:2012" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-28">
+              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <marker date="1555250103000" expanded="false" signature="6:97" ph="..." />
+                <marker date="1555250103000" expanded="true" signature="149:2596" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="386:639" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="672:693" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="728:768" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="804:825" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="860:1165" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="875:1159" ph="handleKeys" />
+                <marker date="1555250103000" expanded="true" signature="1201:1639" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="1678:2115" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="2151:2594" ph="{...}" />
+                <marker date="1555250103000" expanded="true" signature="2618:2665" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <marker date="1555261764000" expanded="false" signature="6:275" ph="..." />
+                <marker date="1555261764000" expanded="true" signature="325:2269" ph="{...}" />
+                <marker date="1555261764000" expanded="true" signature="558:1214" ph="{...}" />
+                <marker date="1555261764000" expanded="true" signature="836:1208" ph="{...}" />
+                <marker date="1555261764000" expanded="true" signature="1258:1421" ph="{...}" />
+                <marker date="1555261764000" expanded="true" signature="1467:1844" ph="{...}" />
+                <marker date="1555261764000" expanded="true" signature="1846:2267" ph="/* void Update() ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/EditorUIController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <marker date="1555261274000" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555261274000" expanded="true" signature="149:348" ph="{...}" />
+                <marker date="1555261274000" expanded="true" signature="246:267" ph="{...}" />
+                <marker date="1555261274000" expanded="true" signature="325:346" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+              <folding>
+                <marker date="1555262018000" expanded="true" signature="6:64" ph="..." />
+                <marker date="1555262018000" expanded="true" signature="129:1219" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="209:222" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="257:270" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="306:1165" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="438:1159" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="707:1076" ph="{...}" />
+                <marker date="1555262018000" expanded="true" signature="1204:1217" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <folding>
+                <marker date="1555262373000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555262373000" expanded="true" signature="137:1469" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="247:268" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="303:324" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="360:656" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="521:650" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="691:1467" ph="{...}" />
+                <marker date="1555262373000" expanded="true" signature="1388:1461" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,6 +790,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectDataList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EditorUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InProgress/TestLoadAssetBundle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/BundleBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -190,6 +807,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/SetupAnimationsState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -198,14 +816,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllerMovement/PlayerLook.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControllerMovement/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/BundleBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InProgress/TestLoadAssetBundle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/MainMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/EditorUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/BuilderUIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIController.cs" />
       </list>
     </option>
   </component>
@@ -296,7 +918,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16446000" />
+    <option name="totallyTimeSpent" value="20119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -311,11 +933,11 @@
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10246227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10246227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -399,29 +1021,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerControllerMovement/PlayerMove.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerControllerMovement/PlayerLook.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Saver/Saver.cs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/XVSavingData/XVObjectData.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -434,13 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -473,6 +1067,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MainMenuManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <marker date="1555257386000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555257386000" expanded="true" signature="124:786" ph="{...}" />
+            <marker date="1555257386000" expanded="true" signature="228:268" ph="{...}" />
+            <marker date="1555257386000" expanded="true" signature="308:528" ph="{...}" />
+            <marker date="1555257386000" expanded="true" signature="564:784" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EnvironmentResourcesManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -491,16 +1099,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/MainMenuManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/EditEnvironmentState.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="480">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
           <folding>
-            <marker date="1555257386000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1555257386000" expanded="true" signature="124:786" ph="{...}" />
-            <marker date="1555257386000" expanded="true" signature="228:268" ph="{...}" />
-            <marker date="1555257386000" expanded="true" signature="308:528" ph="{...}" />
-            <marker date="1555257386000" expanded="true" signature="564:784" ph="{...}" />
+            <marker date="1555262373000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555262373000" expanded="true" signature="137:1469" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="247:268" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="303:324" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="360:656" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="521:650" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="691:1467" ph="{...}" />
+            <marker date="1555262373000" expanded="true" signature="1388:1461" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/BuildingEnvironmatentState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <marker date="1555262018000" expanded="true" signature="6:64" ph="..." />
+            <marker date="1555262018000" expanded="true" signature="129:1219" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="209:222" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="257:270" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="306:1165" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="438:1159" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="707:1076" ph="{...}" />
+            <marker date="1555262018000" expanded="true" signature="1204:1217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <marker date="1555262436000" expanded="false" signature="6:132" ph="..." />
+            <marker date="1555262436000" expanded="true" signature="177:3554" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="594:1161" ph="states" />
+            <marker date="1555262436000" expanded="true" signature="1355:1426" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="1452:2413" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="2132:2307" ph="/* StateMachine.CurrentState = _editEnvironmentState; ... */" />
+            <marker date="1555262436000" expanded="true" signature="2450:2504" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="2548:3430" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="2607:3424" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="2836:3414" ph="{...}" />
+            <marker date="1555262436000" expanded="true" signature="3505:3552" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <marker date="1555263255000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555263255000" expanded="true" signature="143:2014" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="378:522" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="566:602" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="657:716" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="753:1135" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="1171:1547" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="1586:1947" ph="{...}" />
+            <marker date="1555263255000" expanded="true" signature="1991:2012" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/MainLevelStates/ViewModeState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <marker date="1555250103000" expanded="false" signature="6:97" ph="..." />
+            <marker date="1555250103000" expanded="true" signature="149:2596" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="386:639" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="672:693" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="728:768" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="804:825" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="860:1165" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="875:1159" ph="handleKeys" />
+            <marker date="1555250103000" expanded="true" signature="1201:1639" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="1678:2115" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="2151:2594" ph="{...}" />
+            <marker date="1555250103000" expanded="true" signature="2618:2665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/BuilderUIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <marker date="1555261764000" expanded="false" signature="6:275" ph="..." />
+            <marker date="1555261764000" expanded="true" signature="325:2269" ph="{...}" />
+            <marker date="1555261764000" expanded="true" signature="558:1214" ph="{...}" />
+            <marker date="1555261764000" expanded="true" signature="836:1208" ph="{...}" />
+            <marker date="1555261764000" expanded="true" signature="1258:1421" ph="{...}" />
+            <marker date="1555261764000" expanded="true" signature="1467:1844" ph="{...}" />
+            <marker date="1555261764000" expanded="true" signature="1846:2267" ph="/* void Update() ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/EditorUIController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <marker date="1555261274000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555261274000" expanded="true" signature="149:348" ph="{...}" />
+            <marker date="1555261274000" expanded="true" signature="246:267" ph="{...}" />
+            <marker date="1555261274000" expanded="true" signature="325:346" ph="{...}" />
           </folding>
         </state>
       </provider>

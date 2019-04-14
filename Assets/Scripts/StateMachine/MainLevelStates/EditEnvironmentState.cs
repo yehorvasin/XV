@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EditEnvironmentState : MonoBehaviour, IState
 {
-    public EnvironmentObject CurrentObjectToEdit;
+    public EnvironmentObject CurrentObjectToEdit { get; private set; }
     
     public void ActivateState()
     {
@@ -30,6 +30,8 @@ public class EditEnvironmentState : MonoBehaviour, IState
 
     public void KeysInputAction()
     {
+        if (CurrentObjectToEdit == null) return;
+        
         if (Input.GetKey(KeyCode.W))
             CurrentObjectToEdit.Translate(Vector3.forward);
         else if (Input.GetKey(KeyCode.A))

@@ -1,39 +1,50 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BuildingEnvironmatentState : MonoBehaviour, IState
 {
-    public string objectName;
-    
+    public string objectName = String.Empty;
+
     public void ActivateState()
     {
-        
+
     }
 
     public void DeactivateState()
     {
-        
+
     }
 
     public void MouseInputAction()
     {
-        var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
 
-        var hit = new RaycastHit();
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, 1000))
+        if (!objectName.Equals(String.Empty))
         {
-            var go = Instantiate(prefab, hit.point, Quaternion.identity);
-            go.name = go.name.Replace("(Clone)", "");
-            go.AddComponent<EnvironmentObject>();
+            var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
 
-            //AutoSave after new object built on the scene
-            GameController.Instance.Saver.SaveSceneData();
+            var hit = new RaycastHit();
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, 1000))
+            {
+                var go = Instantiate(prefab, hit.point, Quaternion.identity);
+                go.name = go.name.Replace("(Clone)", "");
+                go.AddComponent<EnvironmentObject>();
+
+                //AutoSave after new object built on the scene
+                GameController.Instance.Saver.SaveSceneData();
+                return;
+            }
+            
+            UIController.Messege(Messenger.NoSelectObject);
         }
     }
-
+    
     public void KeysInputAction()
     {
-        
+
     }
 }

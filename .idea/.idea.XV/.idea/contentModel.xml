@@ -4,8 +4,11 @@
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_XV.233519012.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BuilderUIController.cs" t="Include" />
+        <e p="EditorUIController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Environment" t="Include">
             <e p="EnvironmentObject.cs" t="Include" />
@@ -35,6 +38,7 @@
             <e p="MainLevelStates" t="Include">
               <e p="BuildingEnvironmatentState.cs" t="Include" />
               <e p="EditEnvironmentState.cs" t="Include" />
+              <e p="Messenger.cs" t="Include" />
               <e p="SetupAnimationsState.cs" t="Include" />
               <e p="ViewModeState.cs" t="Include" />
             </e>
@@ -43,10 +47,54 @@
           <e p="Utils" t="Include">
             <e p="BundleBuilder.cs" t="Include" />
           </e>
+          <e p="XVAnimations" t="Include">
+            <e p="AnimHandler.cs" t="Include" />
+            <e p="DragAndMoveAnimation.cs" t="Include" />
+            <e p="MoveAnimation.cs" t="Include" />
+            <e p="RandomOne.cs" t="Include" />
+            <e p="UCMoveAnimation.cs" t="Include" />
+            <e p="XVAnimation.cs" t="Include" />
+            <e p="XVAnimationController.cs" t="Include" />
+          </e>
           <e p="XVSavingData" t="Include">
             <e p="XVObjectData.cs" t="Include" />
             <e p="XVObjectDataList.cs" t="Include" />
             <e p="XVScenesDataList.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UIController.cs" t="Include" />
+        <e p="UnityChan" t="Include">
+          <e p="Editor" t="Include">
+            <e p="CreateLocatorHere.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="UnityChanShader" t="Include">
+              <e p="Shader" t="Include">
+                <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+                <e p="Unitychan_chara_eye.shader" t="Include" />
+                <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+                <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+                <e p="Unitychan_chara_fuku.shader" t="Include" />
+                <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+                <e p="Unitychan_chara_hada.shader" t="Include" />
+                <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+                <e p="Unitychan_chara_hair.shader" t="Include" />
+                <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SplashScreen" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="SplashScreen.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Stage" t="Include">
+            <e p="Shader" t="Include">
+              <e p="AlphaMask.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Voice" t="Include">
+            <e p="unity-chan_voice_list.txt" t="Include" />
           </e>
         </e>
       </e>

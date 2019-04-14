@@ -12,6 +12,11 @@ public class GameController : MonoBehaviour
     public InputHandler InputHandler;
     public EnvironmentResourcesManager EnvironmentResourcesManager;
     public Saver Saver;
+    public UIController UiController;
+
+    private XVAnimationController _animationController;
+
+    public XVAnimationController AnimController {get; set;}
 
     public DontDestroy DontDestroy;
     
@@ -52,10 +57,10 @@ public class GameController : MonoBehaviour
         StateMachine.States.Add(_editEnvironmentState);
         StateMachine.States.Add(_viewModeState);
 
-//        StateMachine.CurrentState = _buildingEnvironmatentState;
+        StateMachine.CurrentState = _buildingEnvironmatentState;
 //        StateMachine.CurrentState = _editEnvironmentState;
 //        StateMachine.CurrentState = _setupAnimationsState;
-        StateMachine.CurrentState = _viewModeState;
+//        StateMachine.CurrentState = _viewModeState;
 
         DontDestroy = FindObjectOfType<DontDestroy>();
         
