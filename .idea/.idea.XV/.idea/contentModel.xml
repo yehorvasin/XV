@@ -19,6 +19,7 @@
             <e p="EnvironmentResourcesManager.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
           </e>
           <e p="PlayerControllerMovement" t="Include">
             <e p="PlayerLook.cs" t="Include" />
