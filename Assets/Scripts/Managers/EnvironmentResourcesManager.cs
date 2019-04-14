@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class EnvironmentResourcesManager : MonoBehaviour
 {
@@ -36,9 +37,21 @@ public class EnvironmentResourcesManager : MonoBehaviour
             _resourcesObjects.Add(objects[i] as GameObject);
     }
 
-    private void LoadObjectsFromBundle(string bundlePath)
+    public IEnumerator LoadObjectsFromBundle(string bundleURL)
     {
-        return;
+        UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(bundleURL, 1, 0);
+        yield return www.SendWebRequest();
+
+        if (www.isNetworkError || www.isHttpError)
+            Debug.Log(www.error);
+        else
+        {
+            AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(www);
+
+            var objects = bundle.LoadAllAssets<GameObject>();
+            foreach (var obj in objects)
+                _resourcesObjects.Add(obj);
+        }
     }
 
     public GameObject GetObjectByName(string name)

@@ -13,6 +13,7 @@
           <e p="InProgress" t="Include">
             <e p="DontDestroy.cs" t="Include" />
             <e p="ScenesButton.cs" t="Include" />
+            <e p="TestLoadAssetBundle.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
             <e p="EnvironmentResourcesManager.cs" t="Include" />
@@ -37,6 +38,9 @@
               <e p="ViewModeState.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="BundleBuilder.cs" t="Include" />
           </e>
           <e p="XVSavingData" t="Include">
             <e p="XVObjectData.cs" t="Include" />
