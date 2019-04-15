@@ -24,6 +24,7 @@ public class XVAnimationController : MonoBehaviour
     public AnimCallBack onAnimationSelected;
     public AnimCallBack onAnimationSetuped;
 
+    private bool isPlaying = false;
     private List<EnvironmentObject> animatedObjects = new List<EnvironmentObject>();
 
     private IEnumerator Start()
@@ -160,7 +161,13 @@ public class XVAnimationController : MonoBehaviour
     
     public void StartSeq()
     {
-        stack[0].Animate(playAnimCallback);
+        if (!isPlaying)
+        {isPlaying = true;
+        stack[0].Animate(playAnimCallback);}
+        else
+        {
+            Debug.Log("Already Playing");
+        }
     }
     
     public void AddToStack(XVAnimation a)
@@ -178,12 +185,13 @@ public class XVAnimationController : MonoBehaviour
             }
         else
         {
+            isPlaying = false;
             ResetObjectPOsistions();
             i = 0;
             //if cycled
             if (isCycled)
             {
-                
+                isPlaying = true;
                 stack[i].Animate(playAnimCallback);
             }
             
