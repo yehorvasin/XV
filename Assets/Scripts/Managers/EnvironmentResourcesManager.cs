@@ -67,4 +67,26 @@ public class EnvironmentResourcesManager : MonoBehaviour
     {
         return _resourcesObjects.Find(x => x.name == name);;
     }
+
+	[ContextMenu("SPAWN")]
+	public void SpawnAllObjects()
+	{
+		var objects = Resources.LoadAll("Base_3D", typeof(GameObject));
+
+        if (objects.Length <= 0)
+        {
+            Debug.LogError("XV ERROR: No objects from resources were loaded");
+            return;
+        }
+
+		var objs = new List<GameObject>();
+		
+        for (var i = 0; i < objects.Length; i++)
+            objs.Add(objects[i] as GameObject);
+
+		foreach (var o in objs)
+		{
+			Instantiate(o, Vector3.zero, Quaternion.identity);
+		}
+	}
 }
