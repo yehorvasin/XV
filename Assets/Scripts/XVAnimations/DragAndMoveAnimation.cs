@@ -12,9 +12,14 @@ public class DragAndMoveAnimation : XVAnimation
     }
     public override void Animate(AnimCallBack onEnd)
     {
-        start_y = go1.transform.position.y;
+        if (!go1.GetComponent<EnvironmentObject>().unityChan)
+        {start_y = go1.transform.position.y;
         Debug.Log("Animate");
-        StartCoroutine(move(onEnd));
+        StartCoroutine(move(onEnd));}
+        else
+        {
+            onEnd.Invoke();
+        }
     }
 
     IEnumerator move( AnimCallBack onEnd)

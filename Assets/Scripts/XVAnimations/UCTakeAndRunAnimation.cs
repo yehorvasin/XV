@@ -126,6 +126,7 @@ public class UCTakeAndRunAnimation : XVAnimation
         animator.SetBool("run", false);
 
         onEnd.Invoke();
+        go1.GetComponent<UChanVoice>().PlayBreathing();
         Debug.Log("End Animate");
     }
     

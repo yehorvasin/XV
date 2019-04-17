@@ -18,4 +18,10 @@ public class UChanVoice : MonoBehaviour
     {
         
     }
+
+    public void PlayBreathing()
+    {
+        source.clip = breathing;
+        source.Play();
+    }
 }

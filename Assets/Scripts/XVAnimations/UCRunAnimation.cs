@@ -123,6 +123,7 @@ public class UCRunAnimation : XVAnimation
         agent.speed = startAgentSpeed;
         agent.isStopped = true;
         animator.SetBool("run", false);
+        go1.GetComponent<UChanVoice>().PlayBreathing();
         yield return new WaitForSeconds(1);
         onEnd.Invoke();
         Debug.Log("End Animate");
