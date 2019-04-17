@@ -12,19 +12,27 @@ public class SetupAnimationsState : MonoBehaviour, IState
     private enum AnimState {NO_OBJECT, CHOOSE_ANIM, SETUP}
     private AnimState _innerState = AnimState.NO_OBJECT;
 
+    private GameObject particle;
+
     public void ActivateState()
     {
         GameController.Instance.AnimController.LinkDependencies(this);
+
+        
+        particle = Instantiate( GameController.Instance.AnimController.particlePrefab);
+        particle.SetActive(false);
+
         GameController.Instance.AnimController.onAnimationSelected += AnimationSelected;
-        GameController.Instance.AnimController.onAnimationSelected += AnimationSetaped;
+        GameController.Instance.AnimController.onAnimationSetuped += AnimationSetaped;
 
     }
 
     public void DeactivateState()
     {
-         GameController.Instance.AnimController.Delink();
+        GameController.Instance.AnimController.Delink();
+        Destroy(particle);
         GameController.Instance.AnimController.onAnimationSelected -= AnimationSelected;
-        GameController.Instance.AnimController.onAnimationSelected -= AnimationSetaped;
+        GameController.Instance.AnimController.onAnimationSetuped -= AnimationSetaped;
     }
 
     public void MouseInputAction()
@@ -40,7 +48,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
            }
            case AnimState.CHOOSE_ANIM:
            {
-              // SelectObject();//if fail to chose object -> curent objectt = null
+               SelectObject();//if fail to chose object -> curent objectt = null
                break;
            }
        }
@@ -54,6 +62,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
     public void AnimationSetaped()
     {
         _innerState = AnimState.NO_OBJECT;
+        particle.SetActive(false);
         // CurrentObjectToEdit = null;
         // Debug.Log("Choose object to continue");
     }
@@ -76,6 +85,10 @@ public class SetupAnimationsState : MonoBehaviour, IState
                 CurrentObjectToEdit = obj;
                 _innerState = AnimState.CHOOSE_ANIM;
                 Debug.Log("Object selected! You can now chhose animation for it!");
+                GameController.Instance.AnimController.DisplayToUser("Object selected! You can now chhose animation for it!");
+                particle.transform.position = CurrentObjectToEdit.transform.position;
+                particle.SetActive(true);
+                particle.GetComponent<ParticleSystem>().Play();
             }
         }
         else

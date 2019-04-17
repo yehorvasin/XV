@@ -77,7 +77,8 @@ public class UCTakeAndRunAnimation : XVAnimation
     IEnumerator CheckIfOnPlace( AnimCallBack onEnd)
     {
         Vector3 target = go2.transform.position;
-        while (Vector3.Distance(target, go1.transform.position) > 1f)
+        target.y = go1.transform.position.y;
+        while (Vector3.Distance(target, go1.transform.position) > 2f)
        {
            yield return new WaitForSeconds(0.1f);
            
@@ -148,12 +149,13 @@ public class UCTakeAndRunAnimation : XVAnimation
     {
         //go to next pos
          Vector3 target = points[0];
-        while (Vector3.Distance(target, go1.transform.position) > 0.01f)
+         target.y = go1.transform.position.y;
+        while (Vector3.Distance(target, go1.transform.position) > 2f)
        {
            yield return new WaitForSeconds(0.1f);
            
            NavMeshHit hit;
-           if (NavMesh.SamplePosition(points[0], out hit, 2.0f, NavMesh.AllAreas))
+           if (NavMesh.SamplePosition(target, out hit, 2.0f, NavMesh.AllAreas))
            {
                NavMeshPath path = new NavMeshPath();
                if (NavMesh.CalculatePath(go1.transform.position, hit.position, NavMesh.AllAreas, path))

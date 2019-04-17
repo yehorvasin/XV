@@ -67,17 +67,11 @@ public class UCTakeAndWalkAnimation : XVAnimation
         }
     }
 
-    // IEnumerator move( AnimCallBack onEnd)
-    // {
-       
-       
-    //     yield return null;
-    // }
-
     IEnumerator CheckIfOnPlace( AnimCallBack onEnd)
     {
         Vector3 target = go2.transform.position;
-        while (Vector3.Distance(target, go1.transform.position) > 1f)
+        target.y = go1.transform.position.y;
+        while (Vector3.Distance(target, go1.transform.position) > 2f)
        {
            yield return new WaitForSeconds(0.1f);
            
@@ -128,32 +122,18 @@ public class UCTakeAndWalkAnimation : XVAnimation
         Debug.Log("End Animate");
     }
     
-    // private IEnumerator moveToFirst( AnimCallBack onEnd)
-    // {
-    //     Vector3 target = go2.transform.position;
-    //     while (Vector3.Distance(target, go1.transform.position) > 0.0001f)
-    //    {
-    //        float speed = 5;
-    //        float step =  speed * Time.deltaTime;
-    //        go1.transform.position = Vector3.MoveTowards(go1.transform.position, target, step);
-    //        yield return null;
-    //    }
-    //     //take sekond object
-    //    go2.transform.position = go1.transform.position +  go1.transform.up;
-    //    go2.transform.parent = go1.transform;
-    //    StartCoroutine(moveToDestination(onEnd));
-    // }
 
     private IEnumerator moveToDestination( AnimCallBack onEnd)
     {
         //go to next pos
          Vector3 target = points[0];
-        while (Vector3.Distance(target, go1.transform.position) > 0.01f)
+         target.y = go1.transform.position.y;
+        while (Vector3.Distance(target, go1.transform.position) > 2f)
        {
            yield return new WaitForSeconds(0.1f);
            
            NavMeshHit hit;
-           if (NavMesh.SamplePosition(points[0], out hit, 2.0f, NavMesh.AllAreas))
+           if (NavMesh.SamplePosition(target, out hit, 2.0f, NavMesh.AllAreas))
            {
                NavMeshPath path = new NavMeshPath();
                if (NavMesh.CalculatePath(go1.transform.position, hit.position, NavMesh.AllAreas, path))

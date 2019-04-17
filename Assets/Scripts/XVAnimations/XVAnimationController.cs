@@ -21,8 +21,12 @@ public class XVAnimationController : MonoBehaviour
 
     public bool isCycled = false;
 
+    public MsgDelegate newMessage;
+
     public AnimCallBack onAnimationSelected;
     public AnimCallBack onAnimationSetuped;
+
+    public GameObject particlePrefab;
 
     private bool isPlaying = false;
     private List<EnvironmentObject> animatedObjects = new List<EnvironmentObject>();
@@ -53,7 +57,7 @@ public class XVAnimationController : MonoBehaviour
         onAnimationSelected?.Invoke();
         animatedObjects.Add(setupAnimationsState.CurrentObjectToEdit);
         CheckSetupedAnim();
-        DisplayToUser(currentSetupedAnim.GetDescription());
+       
     }
 
     private void CheckSetupedAnim()
@@ -161,9 +165,15 @@ public class XVAnimationController : MonoBehaviour
     
     public void StartSeq()
     {
+
         if (!isPlaying)
-        {isPlaying = true;
-        stack[0].Animate(playAnimCallback);}
+        {
+            isPlaying = true;
+            DisplayToUser(stack[0].GetDescription());
+            stack[0].Animate(playAnimCallback);
+            
+
+        }
         else
         {
             Debug.Log("Already Playing");
@@ -180,14 +190,16 @@ public class XVAnimationController : MonoBehaviour
         i++;
         if (i < stack.Count)
             {
+                DisplayToUser(stack[i].GetDescription());
                 stack[i].Animate(playAnimCallback);
-                Debug.Log("Next anim: " + i);
+                Debug.Log("anim: " + i);
             }
         else
         {
             isPlaying = false;
             ResetObjectPOsistions();
             i = 0;
+            DisplayToUser("Animations ended");
             //if cycled
             if (isCycled)
             {
@@ -198,9 +210,10 @@ public class XVAnimationController : MonoBehaviour
         }
     }
 
-    private void DisplayToUser(string str)
+    public void DisplayToUser(string str)
     {
         //some ui msg
+        newMessage(str);
         Debug.Log(str);
     }
 
