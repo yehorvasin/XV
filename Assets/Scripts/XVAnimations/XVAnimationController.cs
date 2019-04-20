@@ -183,6 +183,8 @@ public class XVAnimationController : MonoBehaviour
     public void AddToStack(XVAnimation a)
     {
         stack.Add(a);
+        if (stackChangedEvent != null)
+            stackChangedEvent(stack);
     }
 
     public void Next()
@@ -224,6 +226,44 @@ public class XVAnimationController : MonoBehaviour
             i.ResetToStartPos();
         }
     }
+
+    public delegate void StackChanged(List<XVAnimation> stck);
+
+    public StackChanged stackChangedEvent;
+
+    public void MoveUp(XVAnimation a)
+    {
+        int index = stack.IndexOf(a);
+        if (index > 0)
+        {
+            XVAnimation tmp = stack[index - 1];
+            stack[index - 1] = a;
+            stack[index] = tmp;
+            if (stackChangedEvent != null)
+                stackChangedEvent(stack);
+        }
+    }
+    
+    public void MoveDown(XVAnimation a)
+    {
+        int index = stack.IndexOf(a);
+        if (index > -1 && index < stack.Count - 1)
+        {
+            XVAnimation tmp = stack[index + 1];
+            stack[index + 1] = a;
+            stack[index] = tmp;
+            if (stackChangedEvent != null)
+                stackChangedEvent(stack);
+        }
+    }
+
+    public void RemoveAnim(XVAnimation a)
+    {
+        stack.Remove(a);
+        if (stackChangedEvent != null)
+            stackChangedEvent(stack);
+    }
+    
 
     private void OnDestroy()
     {

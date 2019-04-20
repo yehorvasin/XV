@@ -9,7 +9,12 @@ public class MoveAnimation : XVAnimation
     
     public override string GetDescription()
     {
+        if (string.IsNullOrEmpty(description))
         return ("Move object to point 0");
+        else
+        {
+            return description;
+        }
     }
 
     public override void Animate(AnimCallBack onEnd)

@@ -112,6 +112,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &362801188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+  m_PrefabInstance: {fileID: 9205379917695674031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &402510559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9205379917535917168, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+  m_PrefabInstance: {fileID: 9205379917695674031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &402510560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402510559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caa6db31b1354206b1485da434b75d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  namePlacholder: {fileID: 0}
+  descriptionPlaceholder: {fileID: 0}
 --- !u!1 &1057825065
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9205379916367555491, guid: 6a61544749113493b9c93ec12058238e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -472,5 +507,49 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9205379916448230531, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379916448230531, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -362.59998
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917389573273, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917389573273, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -179.50002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 402510560}
+    - target: {fileID: 9205379916386745507, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000002033293
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSliderValueChaged
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Slider, UnityEngine.UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205379917504319115, guid: 6a61544749113493b9c93ec12058238e, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 362801188}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a61544749113493b9c93ec12058238e, type: 3}

@@ -8,7 +8,12 @@ public class DragAndMoveAnimation : XVAnimation
     
     public override string GetDescription()
     {
+        if (string.IsNullOrEmpty(description))
         return ("Move object to second one, take it, go to the point 0 and place second object on point 1");
+        else
+        {
+            return description;
+        }
     }
     public override void Animate(AnimCallBack onEnd)
     {

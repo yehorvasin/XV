@@ -12,7 +12,12 @@ public class UCTakeAndWalkAnimation : XVAnimation
 
      public override string GetDescription()
     {
+        if (string.IsNullOrEmpty(description))
         return ("Unity-chan walk to second object, take it, go to point 0 and place object on point 1");
+        else
+        {
+            return description;
+        }
     }
     public override void Animate(AnimCallBack onEnd)
     {
