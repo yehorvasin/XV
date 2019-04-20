@@ -60,6 +60,7 @@
             <e p="UCTakeAndRunAnimation.cs" t="Include" />
             <e p="UCTakeAndWalkAnimation.cs" t="Include" />
             <e p="UI" t="Include">
+              <e p="UIStackContoller.cs" t="Include" />
               <e p="XVAnimationPanel.cs" t="Include" />
             </e>
             <e p="XVAnimation.cs" t="Include" />

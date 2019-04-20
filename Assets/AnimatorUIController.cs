@@ -12,10 +12,22 @@ public class AnimatorUIController : MonoBehaviour
 
     public SetupAnimationsState SetupAnimationsState;
 
-    void Start()
-    {
+    private XVAnimationController _animationController;
 
-       
+    private void Start()
+    {
+        _animationController = GameController.Instance.AnimController;
+        _animationController.stackChangedEvent += ReloadStack;
+    }
+
+    private void OnDestroy()
+    {
+        _animationController.stackChangedEvent -= ReloadStack;
+    }
+
+    public void ReloadStack(List<XVAnimation> stack)
+    {
+        
     }
     
     public void CheckAnimState(EnvironmentObject curObj)
