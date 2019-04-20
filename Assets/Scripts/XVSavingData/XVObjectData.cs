@@ -4,8 +4,6 @@ using UnityEngine;
 [Serializable]
 public class XVObjectData
 {
-    public string objectName;
-    
     #region Position
     public float X_Position;
     public float Y_Position;
@@ -19,6 +17,18 @@ public class XVObjectData
     public float W_Rotation;
     #endregion
 
+    #region Color
+
+    public float r = 255f;
+    public float g = 255f;
+    public float b = 255f;
+    public float a;
+
+    #endregion
+    
+    public string objectName;
+    public string displayName;
+    
     public LoadFromType LoadFromType;
     public string bundlePath;
     
@@ -48,7 +58,15 @@ public class XVObjectData
         this.Z_Rotation = rotation.z;
         this.W_Rotation = rotation.w;
     }
-    
+
+    public void SetColor(Color color)
+    {
+        this.r = color.r;
+        this.g = color.g;
+        this.b = color.b;
+        this.a = color.a;
+    }
+
     public XVObjectData()
     {
         

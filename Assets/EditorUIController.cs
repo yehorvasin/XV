@@ -5,15 +5,20 @@ using UnityEngine.UI;
 
 public class EditorUIController : MonoBehaviour
 {
-    public InputField inputField;
-    void Start()
-    {
-        
-    }
+    public GameObject EditorUiContent;
 
-    // Update is called once per frame
-    void Update()
+    public Button[] PalitraButtons;
+    
+    public InputField inputField;
+
+    private void Start()
     {
-        
+        var state = GameController.Instance.EditEnvironmentState;
+
+        foreach (var button in PalitraButtons)
+        {
+            var image = button.GetComponent<RawImage>();
+            button.onClick.AddListener(() => state.ChangeCurrentObjectColour(image.color));
+        }
     }
 }

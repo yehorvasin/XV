@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public InputHandler InputHandler;
     public EnvironmentResourcesManager EnvironmentResourcesManager;
     public Saver Saver;
+    public UIController UiController;
 
     private XVAnimationController _animationController;
 
@@ -43,7 +44,7 @@ public class GameController : MonoBehaviour
             Instance = this;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         StateMachine = GetComponent<StateMachine>();
         _buildingEnvironmatentState = gameObject.AddComponent<BuildingEnvironmatentState>();
@@ -56,13 +57,13 @@ public class GameController : MonoBehaviour
         StateMachine.States.Add(_editEnvironmentState);
         StateMachine.States.Add(_viewModeState);
 
-//        StateMachine.CurrentState = _buildingEnvironmatentState;
-        // StateMachine.CurrentState = _editEnvironmentState;
-//        StateMachine.CurrentState = _viewModeState;
-        StateMachine.CurrentState = _setupAnimationsState;
+        StateMachine.CurrentState = _viewModeState;
         StateMachine.CurrentState.ActivateState();
 
         DontDestroy = FindObjectOfType<DontDestroy>();
+
+        while (EnvironmentResourcesManager.isReady == false)
+            yield return null;
         
         DeserializeSceneContent();
     }
@@ -83,16 +84,24 @@ public class GameController : MonoBehaviour
             foreach (var element in objects)
             {
                 var go = Instantiate(
-                    EnvironmentResourcesManager.Instance.ResourcesObjects.Find(x => x.name == element.objectName),
+                    EnvironmentResourcesManager.ResourcesObjects.Find(x => x.name == element.objectName),
                     new Vector3(element.X_Position, element.Y_Position, element.Z_Position),
                     new Quaternion(element.X_Rotation, element.Y_Rotation, element.Z_Rotation, element.W_Rotation));
                 
                 go.name = go.name.Replace("(Clone)", "");
-                go.AddComponent<EnvironmentObject>();
+                var obj = go.AddComponent<EnvironmentObject>();
+                obj.nameToDisplay = element.displayName;
+                
+//                var renderers = obj.GetComponentsInChildren<Renderer>();
+//                foreach (var r in renderers)
+//                {
+//                    var color = new Color(element.r, element.g, element.b, element.a);
+//                    r.material.color = color;
+//                }
             }
         }
     }
-    
+
     //TEMP
     [ContextMenu("Back To Menu")]
     public void BackToMenu()

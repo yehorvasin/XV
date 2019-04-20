@@ -1,25 +1,29 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BuildingEnvironmatentState : MonoBehaviour, IState
 {
-    public static string objectName = String.Empty;
-    
+    public string objectName = String.Empty;
+
     public void ActivateState()
     {
-        
+
     }
 
     public void DeactivateState()
     {
-        
+
     }
 
     public void MouseInputAction()
     {
-        if(!objectName.Equals(String.Empty))
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
+        if (!objectName.Equals(String.Empty))
         {
-            var prefab = EnvironmentResourcesManager.Instance.GetObjectByName(objectName);
+            var prefab = GameController.Instance.EnvironmentResourcesManager.GetObjectByName(objectName);
 
             var hit = new RaycastHit();
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -29,15 +33,18 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
                 var go = Instantiate(prefab, hit.point, Quaternion.identity);
                 go.name = go.name.Replace("(Clone)", "");
                 go.AddComponent<EnvironmentObject>();
+
+                //AutoSave after new object built on the scene
+                GameController.Instance.Saver.SaveSceneData();
+                return;
             }
-
-            return;
+            
+            UIController.Messege(Messenger.NoSelectObject);
         }
-        UIController.Messege(Messenger.NoSelectObject);
     }
-
+    
     public void KeysInputAction()
     {
-        
+
     }
 }
