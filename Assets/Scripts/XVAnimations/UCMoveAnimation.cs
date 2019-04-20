@@ -12,7 +12,12 @@ public class UCMoveAnimation : XVAnimation
 
      public override string GetDescription()
     {
-        return ("Unity-chan walk to point 0");
+        if (string.IsNullOrEmpty(description))
+            return ("Unity-chan walk to point 0");
+        else
+        {
+            return description;
+        }
     }
     public override void Animate(AnimCallBack onEnd)
     {

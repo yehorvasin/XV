@@ -41,6 +41,7 @@ public class XVAnimationController : MonoBehaviour
 
     public void LinkDependencies(SetupAnimationsState _setupAnimationsState)
     {
+        DisplayToUser("Please select an object to start an animation setup");
         setupAnimationsState = _setupAnimationsState;
         setupAnimationsState.mouseInputEvent.AddListener(OnInputMouse);
     }
@@ -86,7 +87,7 @@ public class XVAnimationController : MonoBehaviour
 
         if (!needObject && !needPoint)
         {
-            DisplayToUser("Animation setuped succesfully!!");
+            DisplayToUser("Animation setup successfully!!");
             stack.Add(currentSetupedAnim);
             currentSetupedAnim = null;
             onAnimationSetuped?.Invoke();
@@ -213,7 +214,8 @@ public class XVAnimationController : MonoBehaviour
     public void DisplayToUser(string str)
     {
         //some ui msg
-        newMessage(str);
+        if (newMessage != null)
+            newMessage(str);
         Debug.Log(str);
     }
 

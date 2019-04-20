@@ -8,6 +8,8 @@ public class XVAnimation : MonoBehaviour
     public GameObject go2;
     public List<Vector3> points = new List<Vector3>();
     public float speed = 1;
+    public string description;
+    public string name;
 
     virtual public bool IsSecondObjectNeeded()
     {
