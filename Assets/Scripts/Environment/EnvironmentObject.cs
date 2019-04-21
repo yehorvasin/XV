@@ -17,7 +17,8 @@ public class EnvironmentObject : MonoBehaviour
 
     private void Start()
     {
-        nameToDisplay = gameObject.name;
+        if (string.IsNullOrWhiteSpace(nameToDisplay))
+            nameToDisplay = gameObject.name;
         startPos = transform.position;
     }
 

@@ -29,6 +29,9 @@ public class EditEnvironmentState : MonoBehaviour, IState
         {
             var obj = hit.collider.GetComponent<EnvironmentObject>();
             _currentObjectToEdit = obj;
+
+            if (obj != null)
+                GameController.Instance.UiController.EditorUiController.inputField.text = _currentObjectToEdit.nameToDisplay;
         }
     }
 
@@ -48,9 +51,14 @@ public class EditEnvironmentState : MonoBehaviour, IState
             _currentObjectToEdit.Rotate(5);
         else if (Input.GetKey(KeyCode.RightArrow))
             _currentObjectToEdit.Rotate(-5);
-        else if (Input.GetKey(KeyCode.Backspace))
+        else if (Input.GetKey(KeyCode.Delete))
         {
             Destroy(_currentObjectToEdit.gameObject);
+        }
+        else if (Input.GetKey(KeyCode.KeypadEnter))
+        {
+            _currentObjectToEdit.nameToDisplay =
+                GameController.Instance.UiController.EditorUiController.inputField.text;
         }
     }
 
@@ -65,5 +73,12 @@ public class EditEnvironmentState : MonoBehaviour, IState
         }
 
         _currentObjectToEdit.color = color;
+    }
+
+    public void ChangeCurrentObjectName(string name)
+    {
+        if (_currentObjectToEdit == null) return;
+
+        _currentObjectToEdit.nameToDisplay = name;
     }
 }
