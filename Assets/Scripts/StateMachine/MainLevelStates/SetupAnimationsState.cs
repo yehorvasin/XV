@@ -14,6 +14,10 @@ public class SetupAnimationsState : MonoBehaviour, IState
 
     private GameObject particle;
 
+    public delegate void OnObjectChosen(EnvironmentObject obj);
+
+    public OnObjectChosen objectChosenEvent;
+
     public void ActivateState()
     {
         GameController.Instance.AnimController.LinkDependencies(this);
@@ -91,8 +95,13 @@ public class SetupAnimationsState : MonoBehaviour, IState
                 particle.transform.position = CurrentObjectToEdit.transform.position;
                 particle.SetActive(true);
                 particle.GetComponent<ParticleSystem>().Play();
+
                 if (CurrentObjectToEdit.unityChan)
                     CurrentObjectToEdit.gameObject.GetComponent<UChanVoice>().PlayHuhu();
+
+                if (objectChosenEvent != null)
+                    objectChosenEvent(obj);
+
             }
         }
         else

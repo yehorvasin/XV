@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class XVAnimationPanel : MonoBehaviour
 {
+
     public XVAnimation anim;
     public Text namePlacholder;
     public Text descriptionPlaceholder;
@@ -62,4 +63,5 @@ public class XVAnimationPanel : MonoBehaviour
         _animationController.MoveDown(anim);
     }
     
+
 }

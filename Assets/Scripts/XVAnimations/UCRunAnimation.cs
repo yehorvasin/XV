@@ -19,6 +19,14 @@ public class UCRunAnimation : XVAnimation
             return description;
         }
     }
+     
+    private bool Check()
+    {
+        return (go1 != null);
+    }
+    
+    
+    
     public override void Animate(AnimCallBack onEnd)
     {
         Debug.Log("Animate");

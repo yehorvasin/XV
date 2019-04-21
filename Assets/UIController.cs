@@ -9,6 +9,9 @@ public class UIController : MonoBehaviour
 
     public BuilderUIController BuilderUiController;
     public EditorUIController EditorUiController;
+    public AnimatorUIController AnimatorUiController;
+
+   
 
     private GameController GameController => GameController.Instance;
 
@@ -16,6 +19,7 @@ public class UIController : MonoBehaviour
     {
         BuilderUiController = GetComponent<BuilderUIController>();
         EditorUiController = GetComponent<EditorUIController>();
+        AnimatorUiController = GetComponent<AnimatorUIController>();
     }
 
     public static void Messege(string str)
@@ -35,7 +39,7 @@ public class UIController : MonoBehaviour
         GameController.StateMachine.CurrentState.ActivateState();
         
         BuilderUiController.builderScrollView.SetActive(true);
-        
+        AnimatorUiController.AnimatorScrollView.SetActive(false);
         EditorUiController.EditorUiContent.SetActive(false);
     }
 
@@ -46,7 +50,7 @@ public class UIController : MonoBehaviour
         GameController.StateMachine.CurrentState.ActivateState();
         
         EditorUiController.EditorUiContent.SetActive(true);
-        
+        AnimatorUiController.AnimatorScrollView.SetActive(false);
         BuilderUiController.builderScrollView.SetActive(false);
     }
 
@@ -56,6 +60,7 @@ public class UIController : MonoBehaviour
         GameController.StateMachine.CurrentState = GameController.ViewModeState;
         GameController.StateMachine.CurrentState.ActivateState();
         
+        AnimatorUiController.AnimatorScrollView.SetActive(false);
         BuilderUiController.builderScrollView.SetActive(false);
         EditorUiController.EditorUiContent.SetActive(false);
     }
@@ -65,5 +70,11 @@ public class UIController : MonoBehaviour
         GameController.StateMachine.CurrentState.DeactivateState();
         GameController.StateMachine.CurrentState = GameController.SetupAnimationsState;
         GameController.StateMachine.CurrentState.ActivateState();
+        
+        AnimatorUiController.AnimatorScrollView.SetActive(true);
+        AnimatorUiController.SetupAnimationsState = GameController.SetupAnimationsState;
+        AnimatorUiController.Subscribe();
+        BuilderUiController.builderScrollView.SetActive(false);
+        EditorUiController.EditorUiContent.SetActive(false);
     }
 }
