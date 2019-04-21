@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_XV.1481157774.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_XV.1618426968.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -10,6 +10,31 @@
         <e p="AnimatorUIController.cs" t="Include" />
         <e p="BuilderUIController.cs" t="Include" />
         <e p="EditorUIController.cs" t="Include" />
+        <e p="GetSocialCapture" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="GetSocialCapture.cs" t="Include" />
+            <e p="GetSocialCapturePreview.cs" t="Include" />
+            <e p="Internal" t="Include">
+              <e p="Gif" t="Include">
+                <e p="GeneratorWorker.cs" t="Include" />
+                <e p="GifEncoder.cs" t="Include" />
+                <e p="GifFrame.cs" t="Include" />
+                <e p="LzwEncoder.cs" t="Include" />
+                <e p="NeuQuant.cs" t="Include" />
+              </e>
+              <e p="Recorder" t="Include">
+                <e p="Recorder.cs" t="Include" />
+                <e p="StoreWorker.cs" t="Include" />
+              </e>
+              <e p="Util" t="Include">
+                <e p="FixedSizeQueue.cs" t="Include" />
+                <e p="MainThreadExecutor.cs" t="Include" />
+                <e p="Singleton.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="GifCaptureController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Environment" t="Include">
             <e p="EnvironmentObject.cs" t="Include" />
