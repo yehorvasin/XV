@@ -7,6 +7,8 @@ public class XVAnimationPanel : MonoBehaviour
 {
 
     public XVAnimation anim;
+    public InputField nameInputField;
+    public InputField descriptionInputField;
     public Text namePlacholder;
     public Text descriptionPlaceholder;
     public Text nameText;
@@ -23,11 +25,14 @@ public class XVAnimationPanel : MonoBehaviour
 
     public void LinkData(XVAnimation _anim)
     {
+        Debug.Log("LinkData");
         anim = _anim;
-        namePlacholder.text = anim.name;
-        descriptionPlaceholder.text = anim.description;
-        nameText.text = "";
-        descriptionText.text = "";
+        //namePlacholder.text = anim.name;
+        nameInputField.text =  anim.name;
+        descriptionInputField.text =  anim.description;
+        //descriptionPlaceholder.text = anim.description;
+        //nameText.text = "";
+        //descriptionText.text = "";
         slider.minValue = -3;
         slider.maxValue = 3;
         slider.value = anim.speed;

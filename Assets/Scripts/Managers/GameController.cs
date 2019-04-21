@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public Saver Saver;
     public UIController UiController;
 
-    private XVAnimationController _animationController;
+    public XVAnimationController AnimationController;
 
     public XVAnimationController AnimController {get; set;}
 

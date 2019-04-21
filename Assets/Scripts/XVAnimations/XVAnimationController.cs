@@ -30,6 +30,20 @@ public class XVAnimationController : MonoBehaviour
 
     private bool isPlaying = false;
     private List<EnvironmentObject> animatedObjects = new List<EnvironmentObject>();
+    
+   
+    
+    public delegate void StackAddedElement(XVAnimation stack);
+    public StackAddedElement stackAddedElement;
+    
+    public delegate void StackReload(List<XVAnimation> stack);
+    public StackReload stackReload;
+    
+   
+    
+    public delegate void StackDeleteElem(int index);
+    public StackDeleteElem stackDeleteElem;
+    
 
     private IEnumerator Start()
     {
@@ -88,7 +102,8 @@ public class XVAnimationController : MonoBehaviour
         if (!needObject && !needPoint)
         {
             DisplayToUser("Animation setup successfully!!");
-            stack.Add(currentSetupedAnim);
+            AddToStack(currentSetupedAnim);
+           // stack.Add(currentSetupedAnim);
             currentSetupedAnim = null;
             onAnimationSetuped?.Invoke();
         }
@@ -183,9 +198,10 @@ public class XVAnimationController : MonoBehaviour
     
     public void AddToStack(XVAnimation a)
     {
+        Debug.Log("Added to stack");
         stack.Add(a);
-        if (stackChangedEvent != null)
-            stackChangedEvent(stack);
+        if (stackAddedElement != null)
+            stackAddedElement(a);
     }
 
     public void Next()
@@ -229,9 +245,7 @@ public class XVAnimationController : MonoBehaviour
         }
     }
 
-    public delegate void StackChanged(List<XVAnimation> stck);
-
-    public StackChanged stackChangedEvent;
+    
 
     public void MoveUp(XVAnimation a)
     {
@@ -241,8 +255,9 @@ public class XVAnimationController : MonoBehaviour
             XVAnimation tmp = stack[index - 1];
             stack[index - 1] = a;
             stack[index] = tmp;
-            if (stackChangedEvent != null)
-                stackChangedEvent(stack);
+            Debug.Log("Element From Stack Moved UP");
+            if (stackReload != null)
+                stackReload(stack);
         }
     }
     
@@ -254,16 +269,18 @@ public class XVAnimationController : MonoBehaviour
             XVAnimation tmp = stack[index + 1];
             stack[index + 1] = a;
             stack[index] = tmp;
-            if (stackChangedEvent != null)
-                stackChangedEvent(stack);
+            if (stackReload != null)
+                stackReload(stack);
         }
     }
 
     public void RemoveAnim(XVAnimation a)
     {
+        if (stackDeleteElem != null)
+            stackDeleteElem(stack.IndexOf(a));
+       
         stack.Remove(a);
-        if (stackChangedEvent != null)
-            stackChangedEvent(stack);
+       Debug.Log("Removed Element From Stack");
     }
     
 

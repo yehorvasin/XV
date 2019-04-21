@@ -82,7 +82,7 @@ public class UCMoveAnimation : XVAnimation
     IEnumerator CheckIfOnPlace( AnimCallBack onEnd)
     {
         Vector3 target = points[0];
-        while (Vector3.Distance(target, go1.transform.position) > 0.01f)
+        while (Vector3.Distance(target, go1.transform.position) > 2f)
        {
            yield return new WaitForSeconds(0.1f);
            

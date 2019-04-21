@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &170076734
 Light:
   m_ObjectHideFlags: 0
@@ -2924,6 +2924,7 @@ MonoBehaviour:
   EnvironmentResourcesManager: {fileID: 894085781}
   Saver: {fileID: 2074722054}
   UiController: {fileID: 0}
+  AnimationController: {fileID: 0}
   DontDestroy: {fileID: 0}
   OverviewCamera: {fileID: 0}
   FirstPersonCamera: {fileID: 0}

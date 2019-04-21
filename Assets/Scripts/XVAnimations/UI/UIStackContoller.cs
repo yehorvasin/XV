@@ -8,7 +8,7 @@ public class UIStackContoller : MonoBehaviour
     
     private XVAnimationController _animationController;
 
-    private void Start()
+    /*private void Start()
     {
         _animationController = GameController.Instance.AnimController;
         _animationController.stackChangedEvent += ReloadStack;
@@ -22,6 +22,6 @@ public class UIStackContoller : MonoBehaviour
     public void ReloadStack(List<XVAnimation> stack)
     {
         
-    }
+    }*/
     
 }
