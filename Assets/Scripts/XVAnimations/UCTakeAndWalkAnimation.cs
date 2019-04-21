@@ -10,7 +10,12 @@ public class UCTakeAndWalkAnimation : XVAnimation
 
     private float startAnimSpeed, startAgentSpeed;
 
-     public override string GetDescription()
+    private void Start()
+    {
+        name = "Unity chan take and walk animation";
+    }
+
+    public override string GetDescription()
     {
         if (string.IsNullOrEmpty(description))
         return ("Unity-chan walk to second object, take it, go to point 0 and place object on point 1");

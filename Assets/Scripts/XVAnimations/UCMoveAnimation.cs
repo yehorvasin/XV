@@ -25,6 +25,10 @@ public class UCMoveAnimation : XVAnimation
         return (go1 != null);
     }
     
+    private void Start()
+    {
+        name = "Unity chan walk animation";
+    }
     
     
     public override void Animate(AnimCallBack onEnd)

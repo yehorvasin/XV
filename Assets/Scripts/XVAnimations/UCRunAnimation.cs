@@ -25,7 +25,10 @@ public class UCRunAnimation : XVAnimation
         return (go1 != null);
     }
     
-    
+    private void Start()
+    {
+        name = "Unity chan run animation";
+    }
     
     public override void Animate(AnimCallBack onEnd)
     {

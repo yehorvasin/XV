@@ -22,7 +22,10 @@ public class MoveAnimation : XVAnimation
         return (go1 != null);
     }
     
-    
+    private void Start()
+    {
+        name = "Move animation";
+    }
     
     public override void Animate(AnimCallBack onEnd)
     {

@@ -25,7 +25,10 @@ public class UCTakeAndRunAnimation : XVAnimation
         return (go1 != null && go2 != null);
     }
     
-    
+    private void Start()
+    {
+        name = "Unity chan take and run animation";
+    }
     
     public override void Animate(AnimCallBack onEnd)
     {

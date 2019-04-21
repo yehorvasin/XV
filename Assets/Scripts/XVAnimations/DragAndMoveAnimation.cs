@@ -16,6 +16,10 @@ public class DragAndMoveAnimation : XVAnimation
         }
     }
     
+    private void Start()
+    {
+        name = "Take and move animation";
+    }
     
     
     private bool Check()
