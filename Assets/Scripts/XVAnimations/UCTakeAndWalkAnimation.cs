@@ -10,7 +10,12 @@ public class UCTakeAndWalkAnimation : XVAnimation
 
     private float startAnimSpeed, startAgentSpeed;
 
-     public override string GetDescription()
+    private void Start()
+    {
+        name = "Unity chan take and walk animation";
+    }
+
+    public override string GetDescription()
     {
         if (string.IsNullOrEmpty(description))
         return ("Unity-chan walk to second object, take it, go to point 0 and place object on point 1");
@@ -19,21 +24,37 @@ public class UCTakeAndWalkAnimation : XVAnimation
             return description;
         }
     }
+
+
+    private bool Check()
+    {
+        return (go1 != null && go2 != null);
+    }
+    
+    
+    
     public override void Animate(AnimCallBack onEnd)
     {
         Debug.Log("Animate");
+
+        if (!Check())
+        {
+            onEnd.Invoke();
+            Debug.Log("invalid paramenters");
+            return;
+        }
         // StartCoroutine(move(onEnd));
         if (go1.GetComponent<EnvironmentObject>().unityChan)
         {
             agent = go1.GetComponent<NavMeshAgent>();
             animator = go1.GetComponent<Animator>();
 
-            if (points[0].y > 0f)
-                points[0] = new Vector3(points[0].x, 0f, points[0].z);
+            if (go2.transform.position.y > 0f)
+                points[0] = new Vector3(go2.transform.position.x, 0f, go2.transform.position.z);
             Debug.Log(points[0]);
                 
             NavMeshHit hit;
-            if (NavMesh.SamplePosition(points[0], out hit, 2.0f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(go2.transform.position, out hit, 2.0f, NavMesh.AllAreas))
             {
                 NavMeshPath path = new NavMeshPath();
                 if (NavMesh.CalculatePath(go1.transform.position, hit.position, NavMesh.AllAreas, path))

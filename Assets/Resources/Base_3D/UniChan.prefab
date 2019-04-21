@@ -2045,6 +2045,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breathing: {fileID: 8300000, guid: 23b4a85d442dc4abb8d2c6559b135c3c, type: 3}
   hehe: {fileID: 8300000, guid: 9fac2d685a3ce48f0b3ec4ed05101df6, type: 3}
+  nice: {fileID: 8300000, guid: d721cf72523c74b5b937bd0a354fdd40, type: 3}
+  buybuy: {fileID: 8300000, guid: 9386c5176a28d485f9f58d1031791d32, type: 3}
+  yata: {fileID: 8300000, guid: 55cdcf6662c1e410baec7623f20689d6, type: 3}
 --- !u!82 &1857614441756269028
 AudioSource:
   m_ObjectHideFlags: 0

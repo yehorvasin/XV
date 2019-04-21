@@ -61,6 +61,8 @@ public class SetupAnimationsState : MonoBehaviour, IState
     public void AnimationSelected()
     {
         _innerState = AnimState.SETUP;
+        if (CurrentObjectToEdit.unityChan)
+            CurrentObjectToEdit.gameObject.GetComponent<UChanVoice>().PlayNice();
     }
     
     public void AnimationSetaped()
@@ -93,8 +95,13 @@ public class SetupAnimationsState : MonoBehaviour, IState
                 particle.transform.position = CurrentObjectToEdit.transform.position;
                 particle.SetActive(true);
                 particle.GetComponent<ParticleSystem>().Play();
+
+                if (CurrentObjectToEdit.unityChan)
+                    CurrentObjectToEdit.gameObject.GetComponent<UChanVoice>().PlayHuhu();
+
                 if (objectChosenEvent != null)
                     objectChosenEvent(obj);
+
             }
         }
         else

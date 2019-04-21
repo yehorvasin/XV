@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public delegate void AnimCallBack();
@@ -101,10 +102,14 @@ public class XVAnimationController : MonoBehaviour
 
         if (!needObject && !needPoint)
         {
+
             DisplayToUser("Animation setup successfully!!");
+            if (setupAnimationsState.CurrentObjectToEdit.unityChan)
+                setupAnimationsState.CurrentObjectToEdit.gameObject.GetComponent<UChanVoice>().PlayYata();
             AddToStack(currentSetupedAnim);
-           // stack.Add(currentSetupedAnim);
+         
             currentSetupedAnim = null;
+            
             onAnimationSetuped?.Invoke();
         }
     }
@@ -182,7 +187,7 @@ public class XVAnimationController : MonoBehaviour
     public void StartSeq()
     {
 
-        if (!isPlaying)
+        if (!isPlaying && stack.Count > 0)
         {
             isPlaying = true;
             DisplayToUser(stack[0].GetDescription());
@@ -280,7 +285,8 @@ public class XVAnimationController : MonoBehaviour
             stackDeleteElem(stack.IndexOf(a));
        
         stack.Remove(a);
-       Debug.Log("Removed Element From Stack");
+        Destroy(a);
+
     }
     
 

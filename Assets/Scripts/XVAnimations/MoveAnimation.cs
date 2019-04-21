@@ -16,9 +16,27 @@ public class MoveAnimation : XVAnimation
             return description;
         }
     }
-
+    
+    private bool Check()
+    {
+        return (go1 != null);
+    }
+    
+    private void Start()
+    {
+        name = "Move animation";
+    }
+    
     public override void Animate(AnimCallBack onEnd)
     {
+        Debug.Log("Animate");
+
+        if (!Check())
+        {
+            onEnd.Invoke();
+            Debug.Log("invalid paramenters");
+            return;
+        }
         if (!go1.GetComponent<EnvironmentObject>().unityChan)
         {start_y = go1.transform.position.y;
         Debug.Log("Animate");
