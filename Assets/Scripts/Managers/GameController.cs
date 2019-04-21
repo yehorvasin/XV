@@ -93,10 +93,14 @@ public class GameController : MonoBehaviour
                 var obj = go.AddComponent<EnvironmentObject>();
                 obj.nameToDisplay = element.displayName;
                 
-                if (go.GetComponent<BoxCollider>() == null)
+                EnvironmentObject env = go.GetComponent<EnvironmentObject>();
+                if (env == null)
+                    env = go.AddComponent<EnvironmentObject>();
+
+                if (go.GetComponent<BoxCollider>() == null && !env.unityChan)
                     go.AddComponent<BoxCollider>();
 
-                if (go.GetComponent<NavMeshObstacle>() == null)
+                if (go.GetComponent<NavMeshObstacle>() == null && !env.unityChan)
                 {
                     var obstacle = go.AddComponent<NavMeshObstacle>();
                     obstacle.carving = true;
@@ -112,6 +116,8 @@ public class GameController : MonoBehaviour
         }
     }
 
+    
+    
     //TEMP
     [ContextMenu("Back To Menu")]
     public void BackToMenu()

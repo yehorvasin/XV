@@ -35,6 +35,7 @@ public class SetupAnimationsState : MonoBehaviour, IState
     {
         GameController.Instance.AnimController.Delink();
         Destroy(particle);
+        GameController.Instance.AnimationController.StopAnim();
         GameController.Instance.AnimController.onAnimationSelected -= AnimationSelected;
         GameController.Instance.AnimController.onAnimationSetuped -= AnimationSetaped;
     }

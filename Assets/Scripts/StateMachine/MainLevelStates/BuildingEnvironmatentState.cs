@@ -33,12 +33,15 @@ public class BuildingEnvironmatentState : MonoBehaviour, IState
             {
                 var go = Instantiate(prefab, hit.point, Quaternion.identity);
                 go.name = go.name.Replace("(Clone)", "");
-                go.AddComponent<EnvironmentObject>();
 
-                if (go.GetComponent<BoxCollider>() == null)
+                EnvironmentObject env = go.GetComponent<EnvironmentObject>();
+                if (env == null)
+                    env = go.AddComponent<EnvironmentObject>();
+
+                if (go.GetComponent<BoxCollider>() == null && !env.unityChan)
                     go.AddComponent<BoxCollider>();
 
-                if (go.GetComponent<NavMeshObstacle>() == null)
+                if (go.GetComponent<NavMeshObstacle>() == null && !env.unityChan)
                 {
                     var obstacle = go.AddComponent<NavMeshObstacle>();
                     obstacle.carving = true;

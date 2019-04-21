@@ -212,6 +212,16 @@ public class XVAnimationController : MonoBehaviour
             stackAddedElement(a);
     }
 
+
+    public void StopAnim()
+    {
+        stack[i].StopAllCoroutines();
+        i = 0;
+        isPlaying = false;
+        
+    }
+    
+    
     public void Next()
     {
         i++;
@@ -259,38 +269,47 @@ public class XVAnimationController : MonoBehaviour
 
     public void MoveUp(XVAnimation a)
     {
-        int index = stack.IndexOf(a);
-        if (index > 0)
+        if (!isPlaying)
         {
-            XVAnimation tmp = stack[index - 1];
-            stack[index - 1] = a;
-            stack[index] = tmp;
-            Debug.Log("Element From Stack Moved UP");
-            if (stackReload != null)
-                stackReload(stack);
+            int index = stack.IndexOf(a);
+            if (index > 0)
+            {
+                XVAnimation tmp = stack[index - 1];
+                stack[index - 1] = a;
+                stack[index] = tmp;
+                Debug.Log("Element From Stack Moved UP");
+                if (stackReload != null)
+                    stackReload(stack);
+            }
         }
     }
     
     public void MoveDown(XVAnimation a)
     {
-        int index = stack.IndexOf(a);
-        if (index > -1 && index < stack.Count - 1)
+        if (!isPlaying)
         {
-            XVAnimation tmp = stack[index + 1];
-            stack[index + 1] = a;
-            stack[index] = tmp;
-            if (stackReload != null)
-                stackReload(stack);
+            int index = stack.IndexOf(a);
+            if (index > -1 && index < stack.Count - 1)
+            {
+                XVAnimation tmp = stack[index + 1];
+                stack[index + 1] = a;
+                stack[index] = tmp;
+                if (stackReload != null)
+                    stackReload(stack);
+            }
         }
     }
 
     public void RemoveAnim(XVAnimation a)
     {
-        if (stackDeleteElem != null)
-            stackDeleteElem(stack.IndexOf(a));
-       
-        stack.Remove(a);
-        Destroy(a);
+        if (!isPlaying)
+        {
+            if (stackDeleteElem != null)
+                stackDeleteElem(stack.IndexOf(a));
+
+            stack.Remove(a);
+            Destroy(a);
+        }
 
     }
     
