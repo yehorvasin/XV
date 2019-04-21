@@ -40,10 +40,11 @@ public class XVAnimationController : MonoBehaviour
     public delegate void StackReload(List<XVAnimation> stack);
     public StackReload stackReload;
     
-   
-    
     public delegate void StackDeleteElem(int index);
     public StackDeleteElem stackDeleteElem;
+    
+    public delegate void OnSequencePlay(bool playing);
+    public OnSequencePlay sequencePlay;
     
 
     private IEnumerator Start()
@@ -190,9 +191,11 @@ public class XVAnimationController : MonoBehaviour
         if (!isPlaying && stack.Count > 0)
         {
             isPlaying = true;
+            if (sequencePlay != null)
+                sequencePlay(isPlaying);
             DisplayToUser(stack[0].GetDescription());
             stack[0].Animate(playAnimCallback);
-            
+           
 
         }
         else
@@ -221,6 +224,8 @@ public class XVAnimationController : MonoBehaviour
         else
         {
             isPlaying = false;
+            if (sequencePlay != null)
+                sequencePlay(isPlaying);
             ResetObjectPOsistions();
             i = 0;
             DisplayToUser("Animations ended");
