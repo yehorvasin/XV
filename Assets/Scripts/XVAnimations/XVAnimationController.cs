@@ -215,7 +215,7 @@ public class XVAnimationController : MonoBehaviour
 
     public void StopAnim()
     {
-        stack[i].StopAllCoroutines();
+//        stack[i].StopAllCoroutines();
         i = 0;
         isPlaying = false;
         
@@ -316,6 +316,6 @@ public class XVAnimationController : MonoBehaviour
 
     private void OnDestroy()
     {
-        setupAnimationsState.mouseInputEvent.RemoveListener(OnInputMouse);
+//        setupAnimationsState.mouseInputEvent.RemoveListener(OnInputMouse);
     }
 }
