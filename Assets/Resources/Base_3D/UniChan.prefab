@@ -2048,6 +2048,9 @@ MonoBehaviour:
   nice: {fileID: 8300000, guid: d721cf72523c74b5b937bd0a354fdd40, type: 3}
   buybuy: {fileID: 8300000, guid: 9386c5176a28d485f9f58d1031791d32, type: 3}
   yata: {fileID: 8300000, guid: 55cdcf6662c1e410baec7623f20689d6, type: 3}
+  yo: {fileID: 8300000, guid: eed2451bbd4264da8b6c27c92df62faf, type: 3}
+  l0: {fileID: 8300000, guid: d42eccd24e0ee4aef80df9398ec0747c, type: 3}
+  l1: {fileID: 8300000, guid: adf7488d7a7d741409ceb3f11b90852b, type: 3}
 --- !u!82 &1857614441756269028
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2058,7 +2061,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9fac2d685a3ce48f0b3ec4ed05101df6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 99a3b02904f254289a782ecf8e3063e2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

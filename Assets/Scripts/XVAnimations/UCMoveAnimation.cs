@@ -37,6 +37,7 @@ public class UCMoveAnimation : XVAnimation
         // StartCoroutine(move(onEnd));
         if (go1.GetComponent<EnvironmentObject>().unityChan)
         {
+            go1.GetComponent<UChanVoice>().PlayYo();
             agent = go1.GetComponent<NavMeshAgent>();
             animator = go1.GetComponent<Animator>();
 
@@ -128,7 +129,7 @@ public class UCMoveAnimation : XVAnimation
                break;
            }
        }
-       
+        go1.GetComponent<UChanVoice>().PlayLaught();
         animator.speed = startAnimSpeed;
         agent.speed = startAgentSpeed;
         agent.isStopped = true;

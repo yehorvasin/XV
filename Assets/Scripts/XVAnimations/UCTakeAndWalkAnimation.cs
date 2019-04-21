@@ -46,6 +46,7 @@ public class UCTakeAndWalkAnimation : XVAnimation
         // StartCoroutine(move(onEnd));
         if (go1.GetComponent<EnvironmentObject>().unityChan)
         {
+            go1.GetComponent<UChanVoice>().PlayYo();
             agent = go1.GetComponent<NavMeshAgent>();
             animator = go1.GetComponent<Animator>();
 
@@ -139,6 +140,7 @@ public class UCTakeAndWalkAnimation : XVAnimation
 
     private void endAnim(AnimCallBack onEnd)
     {
+        go1.GetComponent<UChanVoice>().PlayLaught();
         animator.speed = startAnimSpeed;
         agent.speed = startAgentSpeed;
         agent.isStopped = true;
@@ -151,6 +153,7 @@ public class UCTakeAndWalkAnimation : XVAnimation
 
     private IEnumerator moveToDestination( AnimCallBack onEnd)
     {
+        go1.GetComponent<UChanVoice>().PlayYo();
         //go to next pos
          Vector3 target = points[0];
          target.y = go1.transform.position.y;

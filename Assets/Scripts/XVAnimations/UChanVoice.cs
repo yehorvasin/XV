@@ -9,6 +9,10 @@ public class UChanVoice : MonoBehaviour
 	public AudioClip nice;
 	public AudioClip buybuy;
 	public AudioClip yata;
+	public AudioClip yo;
+    
+    public AudioClip l0;
+    public AudioClip l1;
 
 	AudioSource source;
 
@@ -51,4 +55,18 @@ public class UChanVoice : MonoBehaviour
         source.clip = yata;
         source.Play();
     }
+    
+    public void PlayYo()
+    {
+        source.clip = yo;
+        source.Play();
+    }
+
+    public void PlayLaught()
+    {
+        float r = Random.Range(-1, 1);
+        source.clip = (r < 0) ? l0 : l1;
+        source.Play();
+    }
+    
 }
