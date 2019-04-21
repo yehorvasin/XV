@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
@@ -91,6 +92,15 @@ public class GameController : MonoBehaviour
                 go.name = go.name.Replace("(Clone)", "");
                 var obj = go.AddComponent<EnvironmentObject>();
                 obj.nameToDisplay = element.displayName;
+                
+                if (go.GetComponent<BoxCollider>() == null)
+                    go.AddComponent<BoxCollider>();
+
+                if (go.GetComponent<NavMeshObstacle>() == null)
+                {
+                    var obstacle = go.AddComponent<NavMeshObstacle>();
+                    obstacle.carving = true;
+                }
                 
 //                var renderers = obj.GetComponentsInChildren<Renderer>();
 //                foreach (var r in renderers)
