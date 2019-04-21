@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+<<<<<<< HEAD
         <e p="AnimatorUIController.cs" t="Include" />
         <e p="BuilderUIController.cs" t="Include" />
         <e p="EditorUIController.cs" t="Include" />
@@ -35,6 +36,10 @@
           </e>
         </e>
         <e p="GifCaptureController.cs" t="Include" />
+=======
+        <e p="BuilderUIController.cs" t="Include" />
+        <e p="EditorUIController.cs" t="Include" />
+>>>>>>> master
         <e p="Scripts" t="Include">
           <e p="Environment" t="Include">
             <e p="EnvironmentObject.cs" t="Include" />
@@ -77,6 +82,7 @@
             <e p="AnimHandler.cs" t="Include" />
             <e p="DragAndMoveAnimation.cs" t="Include" />
             <e p="MoveAnimation.cs" t="Include" />
+<<<<<<< HEAD
             <e p="NotificationBar.cs" t="Include" />
             <e p="RandomOne.cs" t="Include" />
             <e p="UChanVoice.cs" t="Include" />
@@ -88,6 +94,10 @@
               <e p="UIStackContoller.cs" t="Include" />
               <e p="XVAnimationPanel.cs" t="Include" />
             </e>
+=======
+            <e p="RandomOne.cs" t="Include" />
+            <e p="UCMoveAnimation.cs" t="Include" />
+>>>>>>> master
             <e p="XVAnimation.cs" t="Include" />
             <e p="XVAnimationController.cs" t="Include" />
           </e>
