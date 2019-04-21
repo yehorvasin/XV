@@ -20,7 +20,7 @@ public class EnvironmentResourcesManager : MonoBehaviour
 
     private void LoadObjectsFromResources()
     {
-        var objects = Resources.LoadAll("Base_3D", typeof(GameObject));
+        var objects = Resources.LoadAll("Models_3D", typeof(GameObject));
 
         if (objects.Length <= 0)
         {
@@ -56,6 +56,8 @@ public class EnvironmentResourcesManager : MonoBehaviour
                     var objects = bundle.LoadAllAssets<GameObject>();
                     foreach (var obj in objects)
                         _resourcesObjects.Add(obj);
+                    
+                    bundle.Unload(false);
                 }
             }
         }

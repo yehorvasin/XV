@@ -6,8 +6,104 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="BuilderUIController.cs" t="Include" />
+        <e p="EditorUIController.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Environment" t="Include">
+            <e p="EnvironmentObject.cs" t="Include" />
+          </e>
+          <e p="InProgress" t="Include">
+            <e p="DontDestroy.cs" t="Include" />
+            <e p="ScenesButton.cs" t="Include" />
+            <e p="TestLoadAssetBundle.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="EnvironmentResourcesManager.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="InputHandler.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
+          </e>
+          <e p="PlayerControllerMovement" t="Include">
+            <e p="PlayerLook.cs" t="Include" />
+            <e p="PlayerMove.cs" t="Include" />
+          </e>
+          <e p="Saver" t="Include">
+            <e p="Saver.cs" t="Include" />
+          </e>
+          <e p="StateMachine" t="Include">
+            <e p="Interface" t="Include">
+              <e p="IState.cs" t="Include" />
+            </e>
+            <e p="MainLevelStates" t="Include">
+              <e p="BuildingEnvironmatentState.cs" t="Include" />
+              <e p="EditEnvironmentState.cs" t="Include" />
+              <e p="Messenger.cs" t="Include" />
+              <e p="SetupAnimationsState.cs" t="Include" />
+              <e p="ViewModeState.cs" t="Include" />
+            </e>
+            <e p="StateMachine.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="BundleBuilder.cs" t="Include" />
+          </e>
+          <e p="XVAnimations" t="Include">
+            <e p="AnimHandler.cs" t="Include" />
+            <e p="DragAndMoveAnimation.cs" t="Include" />
+            <e p="MoveAnimation.cs" t="Include" />
+            <e p="RandomOne.cs" t="Include" />
+            <e p="UCMoveAnimation.cs" t="Include" />
+            <e p="XVAnimation.cs" t="Include" />
+            <e p="XVAnimationController.cs" t="Include" />
+          </e>
+          <e p="XVSavingData" t="Include">
+            <e p="XVObjectData.cs" t="Include" />
+            <e p="XVObjectDataList.cs" t="Include" />
+            <e p="XVScenesDataList.cs" t="Include" />
+          </e>
+        </e>
+        <e p="UIController.cs" t="Include" />
+        <e p="UnityChan" t="Include">
+          <e p="Editor" t="Include">
+            <e p="CreateLocatorHere.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="UnityChanShader" t="Include">
+              <e p="Shader" t="Include">
+                <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+                <e p="Unitychan_chara_eye.shader" t="Include" />
+                <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+                <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+                <e p="Unitychan_chara_fuku.shader" t="Include" />
+                <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+                <e p="Unitychan_chara_hada.shader" t="Include" />
+                <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+                <e p="Unitychan_chara_hair.shader" t="Include" />
+                <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="SplashScreen" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="SplashScreen.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Stage" t="Include">
+            <e p="Shader" t="Include">
+              <e p="AlphaMask.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Voice" t="Include">
+            <e p="unity-chan_voice_list.txt" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="Library" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
       <e p="XV.sln" t="IncludeFlat" />
     </e>
   </component>
