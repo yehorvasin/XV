@@ -87,8 +87,11 @@ public class XVAnimationController : MonoBehaviour
         if (!needObject && !needPoint)
         {
             DisplayToUser("Animation setuped succesfully!!");
+            if (setupAnimationsState.CurrentObjectToEdit.unityChan)
+                setupAnimationsState.CurrentObjectToEdit.gameObject.GetComponent<UChanVoice>().PlayYata();
             stack.Add(currentSetupedAnim);
             currentSetupedAnim = null;
+            
             onAnimationSetuped?.Invoke();
         }
     }
@@ -262,6 +265,7 @@ public class XVAnimationController : MonoBehaviour
         stack.Remove(a);
         if (stackChangedEvent != null)
             stackChangedEvent(stack);
+        Destroy(a);
     }
     
 

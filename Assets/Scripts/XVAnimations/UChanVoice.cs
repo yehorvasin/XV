@@ -6,6 +6,9 @@ public class UChanVoice : MonoBehaviour
 {
 	public AudioClip breathing;
 	public AudioClip hehe;
+	public AudioClip nice;
+	public AudioClip buybuy;
+	public AudioClip yata;
 
 	AudioSource source;
 
@@ -22,6 +25,30 @@ public class UChanVoice : MonoBehaviour
     public void PlayBreathing()
     {
         source.clip = breathing;
+        source.Play();
+    }
+
+    public void PlayHuhu()
+    {
+        source.clip = hehe;
+        source.Play();
+    }
+
+    public void PlayNice()
+    {
+        source.clip = nice;
+        source.Play();
+    }
+    
+    public void PlayBuyBuy()
+    {
+        source.clip = buybuy;
+        source.Play();
+    }
+
+    public void PlayYata()
+    {
+        source.clip = yata;
         source.Play();
     }
 }
